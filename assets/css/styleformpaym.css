@@ -1,0 +1,96 @@
+/* section-2 */
+#section-2 ul li {
+    opacity: 0.8;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+#section-2 .container {
+    padding: 10px 20px;
+    line-height: 1.7;
+}
+
+#section-2 .container p {
+    margin: 0 0 15px 0;
+    opacity: 0.8;
+}
+
+.title-head {
+    font-size: 1.42857em;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: .5rem;
+}
+
+.title-head a {
+    color: #333;
+    font-size: 20px;
+    transition: all 150ms ease-in-out;
+}
+
+.title-head a:hover {
+    color: #03a9f4;
+}
+
+.page-title .title-head a{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+
+.page-title .title-head a[data-scroll="in"],
+    #section-2 .content-page .p-strong strong[data-scroll="in"] {
+    transform: scaleX(1);
+}
+
+.page-title .title-head a::before {
+    content: "";
+    position: absolute;
+    transform-origin: right;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #03a9f4;
+    transition: 0.5s;
+}
+
+.page-title .title-head a[data-scroll="in"]::before,
+    #section-2 .content-page .p-strong strong[data-scroll="in"]::before {
+    transform: scaleX(0);
+    transition-delay: 0.3s;
+}
+
+#section-2 .content-page .p-strong {
+    margin-top: 50px;
+}
+
+#section-2 .content-page .p-strong strong{
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+#section-2 .content-page .p-strong strong::before {
+    content: "";
+    position: absolute;
+    transform-origin: left;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background: #91c9e2;
+}

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tặng voucher 50% | Linh - Phong Books</title>
+    <link rel="icon" href="./assets/imgs/iconbook.png" type="image/png"/>
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/stylepromotions1.css">
+    <link rel="stylesheet" href="./assets/css/stylegeneral1.css">
+</head>
+<body>
+    <div id="main">
+        <!-- Begin - header -->
+        <div id="header">
+            <div id ="header-1">
+                <div id="header-sec-1">
+                    <a href="#">
+                        <img id ="logo" src="./assets/imgs/logo1.png" alt="Linh - Phong Books" title="Linh - Phong Books">
+                    </a>
+                </div>
+                <div id="header-sec-2">
+                    <div id="sec-2-nav-1">
+                        <input id="text-search" class placeholder="Tìm sản phẩm..." autocomplete="off" type="text">
+                        <a href="#">
+                            <!-- <i id="btn-search-sec-2" class="ti-search"></i> -->
+                            <div id="btn-search-sec-2">
+                                <img src="./assets/gifs/find.png" alt="search">
+                            </div>
+                        </a>
+                    </div>
+                    <script src="./assets/js/chuchay.js"></script>
+                </div>
+                <div id="header-sec-3">
+                    <div id="sec-3-nav-1">
+                        <div>
+                            <div>
+                                <p class="time-open">Giờ mở cửa (08:00 - 22:00)</p>
+                                <p class="logo-hotline" title="Hotline">
+                                    <a href="#" class="hot-line">
+                                        <img id="nav-hotline" src="./assets/imgs/hotline.png" alt="Hotline">
+                                        098.7651.432
+                                    </a>
+                                </p>
+                                
+                                <div id="icon-user">
+                                    <img src="assets/gifs/user.png" alt="user">
+                                    <ul class="nav-user">
+                                        <li><a class="subnav-nav-user" href="login.html" title="Đăng nhập">Đăng nhập</a></li>
+                                        <li><a href="register.html" title="Đăng kí">Đăng kí</a></li>
+                                    </ul>
+                                </div>
+                                <div id="shopping-cart-mini">
+                                    <a href="cartproduct.html">
+                                        <div id="icon-shopping">
+                                            <div class="icon-shopping-cart" title="Giỏ hàng">
+                                                <img src="./assets/gifs/cart.png" alt="Giỏ hàng">
+                                            </div>
+                                            <span class="count-item-pr" id="count-item" data-count="0">0</span>
+                                        </div>
+                                    </a>
+                                    <div class="no-item-cart">
+                                        Không có sản phẩm nào trong giỏ hàng.
+                                    </div>
+                                    <div class="list-item-cart">
+                                        <div class="item-cart">
+                                            <a href="#" title="Totto-Chan Bên Cửa Sổ" class="product-image">
+                                                <img src="./assets/imgs/sach1.jpg">
+                                            </a>
+                                            <div class="detail-item">
+                                                <div class="product-details">
+                                                    <a class="remove-item-cart" href="promotions1.html" onclick="removeitemcart()">×</a>
+                                                    <p class="product-name">
+                                                        <a href="#">Totto-Chan Bên Cửa Sổ</a>
+                                                    </p>
+                                                </div>
+                                                <div class="product-details-bottom">
+                                                    <span class="price pricechange">
+                                                        88.200₫
+                                                    </span>
+                                                </div>
+                                                <div class="form-product">
+                                                    <form class="add-to-cart-form">
+                                                        <div class="clearfix form-group">
+                                                            <div class="qty-ant clearfix custom-btn-number">
+                                                                <div class="custom custom-btn-numbers form-control">
+                                                                    <button type="button" class="btn-minus btn-cts">
+                                                                        -
+                                                                    </button>
+                                                                    <input type="text" class="qty input-text" disabled name="quantity" size="4" value="1" maxlength="3">
+                                                                    <button type="button" class="btn-plus btn-cts">
+                                                                        +
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div>
+                            <div class=""></div>
+                        </div>
+                        <div>
+                            <div class=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                if(localStorage.getItem('count')==0){
+                    document.querySelector('.no-item-cart').classList.add("active")
+                    document.querySelector('.list-item-cart').classList.remove("has-item-cart");
+                }else if(localStorage.getItem('count')>=1){
+                    document.querySelector('.no-item-cart').classList.remove("active")
+                    document.querySelector('.list-item-cart').classList.add("has-item-cart");
+                }
+                function removeitemcart() {
+                    localStorage.setItem('count', 0);
+                }
+                $(document).find('#count-item').text(localStorage.getItem('count')).data('count',localStorage.getItem('count'));
+            </script>
+            <div id ="header-2">
+                <div>
+                    <ul id="nav-header-2">
+                        <li><a href="index.html" class="">Trang chủ</a></li>
+                        <li><a href="introduction.html" class="">Giới thiệu</a></li>
+                        <li><a href="Product.html" class="">Sản phẩm
+                            <div class="ti-arrow-down-1">
+                                <img src="./assets/gifs/down.png" alt="arrow-down">
+                            </div>
+                            </a>
+                            <ul class="nav-2-subnav-1">
+                                <li><a href="#">Tủ Sách
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">Văn Học</a></li>
+                                        <li><a href="#">Tâm Lý - Kỹ Năng Sống</a></li>
+                                        <li><a href="#">Nuôi Dạy Con</a></li>
+                                        <li><a href="#">Ngoại Ngữ</a></li>
+                                        <li><a href="#">Phụ Nữ</a></li>
+                                        <li><a href="#">Kinh Doanh - Kinh Tế</a></li>
+                                        <li><a href="#">Luật</a></li>
+                                        <li><a href="#">Nấu Ăn - Nuôi Trồng</a></li>
+                                        <li><a href="#">Y Học</a></li>
+                                        <li><a href="#">Thiếu Nhi</a></li>
+                                        <li><a href="#">Sách Khoa Học</a></li>
+                                        <li><a href="#">Lịch Sử - Địa Lí - Tôn Giáo</a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">Sách Giáo Khoa
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">Sách cấp 1</a></li>
+                                        <li><a href="#">Sách cấp 2</a></li>
+                                        <li><a href="#">Sách cấp 3</a></li>
+                                        <li><a href="#">Sách thi Đại Học</a></li>
+                                        <li><a href="#">Sách Giáo Viên</a></li>
+                                        <li><a href="#">Sách Đại Học</a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">Dụng Cụ Học Sinh
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">Balo - Cặp</a></li>
+                                        <li><a href="#">Bút - Viết</a></li>
+                                        <li><a href="#">Tẩy</a></li>
+                                        <li><a href="#">Dụng Cụ Đo</a></li>
+                                        <li><a href="#">Sản Phẩm Điện Tử</a></li>
+                                        <li><a href="#">Túi Bút - Hộp Bút</a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">Văn Phòng Phẩm
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">Con dấu - Hộp dấu</a></li>
+                                        <li><a href="#">Dụng Cụ Vẽ</a></li>
+                                        <li><a href="#">Đèn - Bàn học</a></li>
+                                        <li><a href="#">Sản Phẩm Về Giấy</a></li>
+                                        <li><a href="#">Sản Phẩm VPP Khác</a></li>
+                                        <li><a href="#">Sổ - Vở</a></li>
+                                        <li><a href="#">Túi Bút - Hộp Bút</a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">Thế Giới Đồ chơi
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">Board Game</a></li>
+                                        <li><a href="#">Cờ</a></li>
+                                        <li><a href="#">Đất Nặn - Slam</a></li>
+                                        <li><a href="#">Búp Bê</a></li>
+                                        <li><a href="#">Ô tô</a></li>
+                                        <li><a href="#">Đồ Chơi Âm Nhạc</a></li>
+                                        <li><a href="#">Đồ Chơi Cót</a></li>
+                                        <li><a href="#">Đồ Chơi Gỗ</a></li>
+                                        <li><a href="#">Đồ Chơi Sato - Antona</a></li>
+                                        <li><a href="#">LEGO</a></li>
+                                        <li><a href="#">Mô Hình</a></li>
+                                        <li><a href="#">Robot</a></li>
+                                        <li><a href="#">Rubik</a></li>
+                                        <li><a href="#">Đồ Chơi Câu Cá</a></li>
+                                        <li><a href="#">Đồ Chơi Giáo Dục</a></li>
+                                        <li><a href="#">Đồ Chơi Trẻ Em</a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">Dịch Vụ Khu Vui Chơi
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">36 Xuân Thủy</a></li>
+                                        <li><a href="#">424 Nguyễn Trãi</a></li>
+                                        <li><a href="#">828 Đường Láng</a></li>
+                                        <li><a href="#">697 Giải Phóng</a></li>
+                                    </ul>
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="color-rgba">Khuyến mại nối bật
+                            <div class="ti-arrow-down-1">
+                                <img src="./assets/gifs/down.png" alt="arrow-down">
+                            </div>
+                            </a>
+                            <ul class="nav-2-subnav-2">
+                                <li><a href="promotions1.html">Tặng voucher 50%</a></li>
+                                <li><a href="#">Lịch Tết</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="News.html" class="">Tin tức</a></li>
+                        <li><a href="contact.html" class="">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end - header -->
+        <!-- section-1 -->
+        <div id="section-1">
+            <div class="container margin-bottom-10">
+                <ul class="list-navigation">
+                    <li>
+                        <a itemprop="item" href="index.html" title="Trang chủ">
+                            <span itemprop="name">Trang chủ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <strong itemprop="name">Khuyến mại nối bật</strong>
+                    </li>
+                    <li>
+                        <strong itemprop="name">Tặng voucher 50%</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end - section-1 -->
+
+        <!-- Begin - section-2 -->
+        <div id="section-2">
+            <div class="container margin-bottom-20 margin-top-30">
+                <div class="row">
+                    <section class="col-6">
+                        <div class="col-5 margin-bottom-10 padding-l-r-10">
+                            <h1 class="title-head">
+                                Thay áo mới cho cửa hàng online -  Tặng voucher khi mua qua website
+                            </h1>
+                            <div class="article-details">
+                                <p>
+                                    Tưng bừng chào mừng website mới của Nhà sách Linh Phong, tặng ngay 
+                                    <strong>voucher 50.000</strong>
+                                    đồng cho hóa đơn từ 500.000k trở lên. Chương trình áp dụng đồng thời cùng chương trình 
+                                    <strong>giảm 10%</strong>
+                                    cho hầu hết mọi đầu sách khi mua online tại website: nhasachlinhphong.vn
+                                </p>
+                                <p>
+                                    <img src="./assets/imgs/slider_2.png" class="p-img">
+                                </p>
+                                <p>
+                                    Tại sao nên chọn Linh Phong Book để mua sắm?
+                                </p>
+                                <h2>
+                                    <br>
+                                    <strong>1. Mọi sản phẩm bạn cần - Linh Phong Book đều có</strong>
+                                </h2>
+                                <p>
+                                    <a href="index.html">Nhà sách Linh Phong</a>
+                                    là tổ hợp mua sắm - giải trí rộng hơn 2500m2, vừa là nơi để mọi người thỏa mãn nhu cầu của bản thân, vừa là không gian giúp giải phóng cảm xúc cá nhân.
+                                </p>
+                                <p>Dù bạn là ai, bất kể độ tuổi, bất kể mức thu nhập như thế nào, đến Nhà sách Linh Phong đều có thể tìm thấy thứ mình cần; và đều có một nơi chốn để thư giãn, nghỉ ngơi, chia sẻ.</p>
+                                <h2>
+                                    <strong>2. Ưu đãi ngập tràn - Tặng voucher khi mua qua website</strong>
+                                </h2>
+                                <p>Tưng bừng chào mừng website mới của Nhà sách Linh Phong:</p>
+                                <p>- Tặng ngay voucher 50.000 đồng cho hóa đơn từ 500.000k trở lên.</p>
+                                <p>- Giảm thêm 10% cho hầu hết mọi đầu sách</p>
+                                <p>Chương trình áp dụng khi mua online tại website: 
+                                    <a href="index.html">https://nhasachlinhphong.vn/ </a>
+                                </p>
+                                <p>Ngoài ra còn vô vàn những ưu đãi khác, mời các bạn thường xuyên cập nhật tại fanpage: 
+                                    <a href="#">Nhà sách Linh Phong</a>
+                                </p>
+                                <p>
+                                    <img class="p-img-1" src="./assets/imgs/feature_cate_image_2.jpg">
+                                </p>
+                                <h2>
+                                    <strong>3. Linh Phong Books đi muôn nơi</strong>
+                                </h2>
+                                <p>Hiện Nhà sách Linh Phong sở hữu 4 cơ sở tại Hà Nội:</p>
+                                <i>Nhà sách Linh Phong:</i>
+                                <br>
+                                <br>
+                                <p>- Cơ sở 1: 828 Đường Láng - Đống Đa - Hà Nội</p>
+                                <p>Hotline : 094.1234.456</p>
+                                <p>- Cơ sở 2: 36 Xuân Thủy - Cầu Giấy - Hà Nội</p>
+                                <p>Hotline: 093.417.2345</p>
+                                <p>- Cơ sở 3 : 424 Nguyễn Trãi - Thanh Xuân - Hà Nội</p>
+                                <p>Hotline: 0966.688.456</p>
+                                <p>- Cơ sở 4 : 697 Giải Phóng - Hoàng Mai - Hà Nội</p>
+                                <p>Hotline: 0933.695.897</p>
+                                <p>Để đáp ứng nhu cầu của khách hàng dù ở bất cứ nơi đâu, Nhà sách Tiến Thọ nhận ship cod toàn quốc. </p>
+                                <p>Vui lòng liên hệ: Zalo: 093.417.2345  để được tư vấn miễn phí.</p>
+                            </div>
+                        </div>
+                        <div class="col-5 margin-bottom-10 padding-l-r-10">
+                            <div id="article-comments" class="clearfix">
+                                <br>
+                                <br>
+                                <h5 class="title-form-coment">
+                                    Bình luận (1 bình luận)
+                                </h5>
+                                <div class="article-comment">
+                                    <figure class="article-comment-user-image">
+                                        <img src="./assets/fonts/comment.png">
+                                    </figure>
+                                    <div class="article-comment-user-comment">
+                                        <p class="user-name-comment">
+                                            <strong>1</strong>
+                                        </p>
+                                        <span class="article-comment-date">
+                                            09/05/2021
+                                        </span>
+                                        <p>Thích điều này!!!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form id="article_comments" class="clearfix">
+                                <div class="form-content margin-bottom-10 margin-top-20">
+                                    <h5 class="title-form-coment">
+                                        VIẾT BÌNH LUẬN CỦA BẠN
+                                    </h5>
+                                    <p>
+                                        Địa chỉ email của bạn sẽ được bảo mật. Các trường bắt buộc được đánh dấu 
+                                        <span class="required">*</span>
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <fieldset class="form-group">
+                                                <label>
+                                                    Nội dung
+                                                    <span class="required">*</span>
+                                                </label>
+                                                <textarea name="Body" required placeholder="Nội dung" id="comment" class="form-control" rows="6"></textarea>
+                                                <span class="help-block"></span>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-7 padding-r-5">
+                                            <fieldset class="form-group">
+                                                <label>
+                                                    Họ tên
+                                                    <span class="required">*</span>
+                                                </label>
+                                                <input type="text" required placeholder="Họ tên" class="form-control" id="full-name">
+                                                <span class="help-block"></span>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-7 padding-l-5">
+                                            <fieldset class="form-group">
+                                                <label>
+                                                    Email
+                                                    <span class="required">*</span>
+                                                </label>
+                                                <input type="email" required placeholder="Email" class="form-control" id="email">
+                                                <span class="help-block"></span>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-5">
+                                            <button type="submit" class="btn-style" value="Gửi bình luận">Gửi bình luận</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <script src="./assets/js/validator.js"></script>
+                            <script>
+                                Validator({
+                                    form: '#article_comments',
+                                    fromGroupSelector: '.form-group',
+                                    rules: [
+                                        Validator.isRequired('#full-name'),
+                                        Validator.isRequired('#comment'),
+                                        Validator.isEmail('#email')
+                                    ]
+                                })
+                            </script>
+                        </div>
+                    </section>
+                    <aside class="col-4">
+                        <aside class="aside-item collection-category">
+                            <div class="aside-title">
+                                <h3 class="title-head">Danh mục</h3>
+                            </div>
+                            <div class="aside-content">
+                                <ul class="nav-bar">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Tủ Sách</a>
+                                        <span class="span-style"></span>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Sách Giáo Khoa</a>
+                                        <span class="span-style"></span>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Dụng Cụ Học Sinh</a>
+                                        <span class="span-style"></span>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Văn Phòng Phẩm</a>
+                                        <span class="span-style"></span>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Thế Giới Đồ Chơi</a>
+                                        <span class="span-style"></span>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Dịch Vụ Khu Vui Chơi</a>
+                                        <span class="span-style"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <aside class="aside-item top-news margin-top-20">
+                            <div class="aside-title">
+                                <h3 class="title-head">
+                                    <a href="#">Bài viết nổi bật</a>
+                                </h3>
+                            </div>
+                            <article class="item clearfix">
+                                <a href="#" class="a-1">
+                                    <img src="./assets/imgs/do-dung-hoc-tap-de-thuong-3-768x576.jpg" title="Nên mua đồ dùng học tập dễ thương ở đâu?">
+                                </a>
+                                <div class="info clearfix">
+                                    <h4 class="title clearfix">
+                                        <a class="thumb" href="#">Nên mua đồ dùng học tập dễ thương ở đâu?</a>                                        
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="item clearfix">
+                                <a href="#" class="a-1">
+                                    <img src="./assets/imgs/do-dung-hoc-tap-chat-luong-gia-re-2-768x576.jpg" title="Nên mua đồ dùng học tập dễ thương ở đâu?">
+                                </a>
+                                <div class="info clearfix">
+                                    <h4 class="title clearfix">
+                                        <a class="thumb" href="#">Đồ dùng học tập chất lượng, giá rẻ</a>                                        
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="item clearfix">
+                                <a href="#" class="a-1">
+                                    <img src="./assets/imgs/sach-tham-khao-cho-hoc-sinh-cap1-2-3-j-3-1.jpg" title="Nên mua đồ dùng học tập dễ thương ở đâu?">
+                                </a>
+                                <div class="info clearfix">
+                                    <h4 class="title clearfix">
+                                        <a class="thumb" href="#">Trước khi mua sách tham khảo cho học sinh cấp 1,2,3, bố mẹ nên biết</a>                                        
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="item clearfix">
+                                <a href="#" class="a-1">
+                                    <img src="./assets/fonts/balo-hoc-sinh-3-768x564.jpg" title="Nên mua đồ dùng học tập dễ thương ở đâu?">
+                                </a>
+                                <div class="info clearfix">
+                                    <h4 class="title clearfix">
+                                        <a class="thumb" href="#">Mách bạn cách mua và dùng balo học sinh đẹp, chất lượng, giá tốt</a>                                        
+                                    </h4>
+                                </div>
+                            </article>
+                            <article class="item clearfix">
+                                <a href="#" class="a-1">
+                                    <img src="./assets/fonts/do-dung-van-phong-pham2.jpg" title="Nên mua đồ dùng học tập dễ thương ở đâu?">
+                                </a>
+                                <div class="info clearfix">
+                                    <h4 class="title clearfix">
+                                        <a class="thumb" href="#">Kinh nghiệm mua đồ dùng văn phòng phẩm giá tốt, chất lượng</a>                                        
+                                    </h4>
+                                </div>
+                            </article>
+                        </aside>
+                        <aside class="aside-item margin-bottom-30">
+                            <a href="#">
+                                <img src="./assets/imgs/evo_block_product_2_image_2.jpg" alt="">
+                            </a>
+                        </aside>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <!-- end - section-2 -->
+
+        <!-- Begin-Footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="subscribe-area">
+                    <div class="row-1 align-item-center">
+                        <div class="col-1">
+                            <div class="subscribe-content">
+                                <h2>Đăng ký nhận tin</h2>
+                                <p>Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.</p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="subscribe-form">
+                                <form id="mc-form" class="newsletter-form">
+                                    <div class="input-group">
+                                        <input aria-label="Địa chỉ Email" type="email" class="form-control" placeholder="Địa chỉ Email" name="EMAIL" required autocomplete="off">
+                                        <span class="input-group-append">
+                                            <button class="btn-default" type="submit" aria-label="Đăng ký nhận tin" name="subscribe">Đăng ký</button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <div class="single-footer-widget">
+                            <div class="logo">
+                                <a href="#" title="Linh - Phong Books">
+                                    <img src="./assets/imgs/logo1.png" alt="">
+                                </a>
+                                <p>
+                                    LINGPHONGBOOK
+                                    <br>
+                                    <b>Hộ Kinh Doanh nhà sách Linh Phong</b>
+                                    <br>
+                                    GPKD số 01G8019354 do UBND Quận Cầu Giấy Cấp ngày 04/12/2019
+                                </p>
+                                <ul class="footer-quick-links">
+                                    <li>
+                                        <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Chính sách vận chuyển">Chính sách vận chuyển</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                                    </li>
+                                    <li>
+                                        <a href="frompayment.html" title="Hình thức thanh toán">Hình thức thanh toán</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="social">
+                                <li>
+                                    <a href="#" title="Facebook" aria-label="Facebook">
+                                        <i class="ti-facebook"></i>
+                                        <img src="./assets/gifs/iconsfacebook.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Twitter" aria-label="Twitter">
+                                        <i class="ti-twitter-alt"></i>
+                                        <img src="./assets/gifs/43-twitter-512.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Youtube" aria-label="Youtube">
+                                        <i class="ti-youtube"></i>
+                                        <img src="./assets/gifs/youtube.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Instagram" aria-label="Instagram">
+                                        <i class="ti-instagram"></i>
+                                        <img src="./assets/gifs/instagram.png">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="single-footer-widget">
+                            <h3>Liên kết nhanh</h3>
+                            <ul class="footer-quick-links">
+                                <li>
+                                    <a href="#" title="Tủ Sách">Tủ Sách</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Sách Giáo Khoa">Sách Giáo Khoa</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Dụng Cụ Học Sinh">Dụng Cụ Học Sinh</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Văn Phòng Phẩm">Văn Phòng Phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Thế Giới Đồ Chơi">Thế Giới Đồ Chơi</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Dịch Vụ Khu Vui Chơi">Dịch Vụ Khu Vui Chơi</a>
+                                </li>
+                            </ul>
+                            <a href="#">
+                                <img class="img-footer" src="./assets/imgs/dathongbao.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="single-footer-widget">
+                            <h3>Thông tin liên hệ</h3>
+                            <div class="footer-contact-info">
+                                <li>
+                                    <span>Địa chỉ:</span>
+                                    CS1: 828 Đường Láng – Láng Thượng – Hà Nội - 094.1234.828
+                                </li>
+                                <li>
+                                    <span>Địa chỉ:</span>
+                                    CS2: 36 Xuân Thủy – Cầu Giấy – Hà Nội - 0934.173.636
+                                </li>
+                                <li>
+                                    <span>Địa chỉ:</span>
+                                    CS3: 424 Nguyễn Trãi - Thanh Xuân - Hà Nội - 0966.688.424
+                                </li>
+                                <li>
+                                    <span>Địa chỉ:</span>
+                                    CS4: 697 Giải Phóng - Hoàng Mai - Hà Nội - 0933.695.697
+                                </li>
+                                <li>
+                                    <span>Email:</span>
+                                    <a href="#">
+                                        linhphongbook@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <span>Điện thoại:</span>
+                                    <a href="#">012.1234.345</a>
+                                </li>
+                                <li>
+                                    <span>Zalo:</span>
+                                    <a href="#">0987.654.333</a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <div class="container">
+                    <div class="row-1">
+                        <div class="col-5 text-center">
+                            <span>
+                                © Bản quyền thuộc về
+                                <b>Nhà sách Linh Phong</b>
+                                <span class="thanhdoc">|</span>
+                                Cung cấp bởi
+                                <a href="#" title="Sapo">Sapo</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <a href='#' id="bttop" title="Lên đầu trang">
+                    <div class="back-to-top">
+                        <!-- <i class="btn-to-top ti-angle-double-up"></i> -->
+                        <div class="btn-to-top">
+                            <img src="./assets/gifs/preview.png">
+                        </div>
+                    </div>
+                </a>
+                <script type="text/javascript" src="assets/js/backtotop.js"></script>
+            </div>
+        </div>
+        <!-- End-Footer -->
+    </div>
+</body>
+</html>

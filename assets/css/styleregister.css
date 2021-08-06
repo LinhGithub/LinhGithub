@@ -1,0 +1,355 @@
+/* section-1 */
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+#section-1 {
+    background: #f3f3f3;
+}
+
+.list-navigation {
+    color: #9e9fa1;
+    text-align: left;
+    background-color: transparent;
+    position: relative;
+    display: block;
+}
+
+.list-navigation li:after {
+    content: "/";
+    padding: 0 5px;
+    height: 1px;
+}
+
+.list-navigation li a {
+    color: #9e9fa1;
+}
+
+.list-navigation li>a>span:hover {
+    color: #03a9f4;
+    text-decoration: none;
+}
+
+.list-navigation li {
+    display: inline-block;
+}
+
+.list-navigation li strong {
+    color: #03a9f4;
+    font-weight: normal;
+}
+
+.list-navigation li:last-child:after {
+    content: "";
+}
+/* end */
+
+/* section-2 */
+
+.col-4 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+.text-left {
+    text-align: left;
+}
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+fieldset {
+    text-align: left;
+    max-width: 100%;
+}
+
+.social-login--facebook img,
+.social-login--google img{
+    width: 129px;
+    height: 37px;
+}
+
+.title-head {
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.social-login a {
+    display: inline-block;
+    min-width: 140px;
+}
+
+img {
+    border: 0 none;
+    max-width: 100%;
+    height: auto;
+}
+
+.line-break {
+    max-width: 310px;
+    margin: 20px auto 20px;
+    text-align: center;
+    position: relative;
+}
+
+.line-break:before {
+    content: "";
+    width: 100%;
+    height: 0.1px;
+    background: #d6d6d6;
+    /* z-index: 1; */
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.line-break span {
+    display: inline-block;
+    font-size: 12px;
+    height: 24px;
+    line-height: 22px;
+    color: #777;
+    padding: 1px 10px;
+    border-radius: 15px;
+    border: 1px solid #dadade;
+    background-color: #fff;
+    position: relative;
+    /* z-index: 1; */
+}
+
+.form-group {
+    margin-bottom: 5px;
+    padding: 0 0 8px;
+    border: 0;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    align-items: center;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"] {
+    background: #fff;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #dadade;
+    outline: none;
+    box-shadow: none;
+    border-color: #dadade;
+}
+
+.required {
+    font-size: 13px;
+    color: red;
+}
+
+.btn-style {
+    min-width: 290px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+    width: 100%;
+    display: inline-block;
+    padding: 8px 28px;
+    line-height: normal;
+    border: none;
+    text-transform: uppercase;
+    font-size: normal;
+    color: #fff;
+    background: linear-gradient(120deg,var(--bg1),var(--bg2),var(--bg1));
+    user-select: none;
+    transition: 0.5s;
+    background-size: 200%;
+}
+
+.btn-style:hover,
+.btn-style:focus {
+    background-position: right;
+    cursor: pointer;
+}
+
+.btn-style:focus {
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+.btn-register {
+    display: block;
+    margin-bottom: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #03a9f4;
+    margin-top: 10px;
+}
+
+.btn-register:hover {
+    color: #1c1c1c;
+}
+
+.invalid span{
+    color: red;
+}
+
+.invalid.form-group input[type="text"],
+.invalid.form-group input[type="email"],
+.invalid.form-group input[type="tel"],
+.invalid.form-group input[type="password"] {
+    border-color: red;
+}
+
+/* end-sec-2 */
+
+/* footer */
+
+.col-5 {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.row-1 {
+    display: flex;
+}
+#footer {
+    display: block;
+    background-color: #2e282e;
+    padding-top: 40px;
+}
+
+.subscribe-area {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #493f49;
+}
+
+.subscribe-content h2{
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: .01em;
+    line-height: 1.4;
+}
+
+.subscribe-content p {
+    color: #fff;
+    opacity: 0.9;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+
+.subscribe-form {
+    padding-left: 30px;
+}
+
+.subscribe-form form {
+    position: relative;
+    margin-bottom: 0;
+    height: 100%;
+}
+
+.input-group {
+    position: relative;
+}
+
+.subscribe-form form input {
+    display: block;
+    width: 100%;
+    color: #524552;
+    padding-right: 140px;
+    height: 65px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: none;
+    outline: 0;
+    box-shadow: unset;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.subscribe-form form button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: #03a9f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 30px;
+    letter-spacing: .5px;
+    transition: 0.5s;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 99;
+}
+
+.subscribe-form form button:hover,
+.subscribe-form form button:focus {
+    color: #fff;
+    background-color: #0286c2;
+    cursor: pointer;
+}
+
+.subscribe-form form button:focus {
+    box-shadow: 0 0 0 0.2rem rgb(1 123 255 / 25%);
+}
+
+.single-footer-widget .footer-quick-links li a:hover {
+    color: #03a9f4;
+}
+
+
+/* footer: phan-2 */
+.col-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-3 {
+    padding-right: 10px;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+/* footer-phan4 */
+.col-4 {
+    text-align: center;
+    width: 100%;
+}

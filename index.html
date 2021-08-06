@@ -1,0 +1,2505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linh - Phong Books | Thế giới sách Linh Phong</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" href="./assets/imgs/iconbook.png" type="image/png"/>
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/stylegeneral1.css">
+</head>
+<body>
+    <div id="main">
+        <!-- Begin - header -->
+        <div id="header">
+            <div id ="header-1">
+                <div id="header-sec-1">
+                    <a href="#">
+                        <img id ="logo" src="./assets/imgs/logo1.png" alt="Linh - Phong Books" title="Linh - Phong Books">
+                    </a>
+                </div>
+                <div id="header-sec-2">
+                    <div id="sec-2-nav-1">
+                        <input id="text-search" class placeholder="Tìm sản phẩm..." autocomplete="off" type="text">
+                        <a href="#">
+                            <!-- <i id="btn-search-sec-2" class="ti-search"></i> -->
+                            <div id="btn-search-sec-2">
+                                <img src="./assets/gifs/find.png" alt="search">
+                            </div>
+                        </a>
+                    </div>
+                    <script src="./assets/js/chuchay.js"></script>
+                </div>
+                <div id="header-sec-3">
+                    <div id="sec-3-nav-1">
+                        <div>
+                            <div>
+                                <p class="time-open">Giờ mở cửa (08:00 - 22:00)</p>
+                                <p class="logo-hotline" title="Hotline">
+                                    <a href="#" class="hot-line">
+                                        <img id="nav-hotline" src="./assets/imgs/hotline.png" alt="Hotline">
+                                        098.7651.432
+                                    </a>
+                                </p>
+                                
+                                <div id="icon-user">
+                                    <img src="assets/gifs/user.png" alt="user">
+                                    <ul class="nav-user">
+                                        <li><a class="subnav-nav-user" href="login.html" title="Đăng nhập">Đăng nhập</a></li>
+                                        <li><a href="register.html" title="Đăng kí">Đăng kí</a></li>
+                                    </ul>
+                                </div>
+                                <div id="shopping-cart-mini">
+                                    <a href="cartproduct.html">
+                                        <div id="icon-shopping">
+                                            <div class="icon-shopping-cart" title="Giỏ hàng">
+                                                <img src="./assets/gifs/cart.png" alt="Giỏ hàng">
+                                            </div>
+                                            <span class="count-item-pr" id="count-item" data-count="0">0</span>
+                                        </div>
+                                    </a>
+                                    <div class="no-item-cart">
+                                    </div>
+                                    <div class="list-item-cart">
+                                        <div class="item-cart">
+                                            <a href="#" title="Totto-Chan Bên Cửa Sổ" class="product-image">
+                                                <img src="./assets/imgs/sach1.jpg">
+                                            </a>
+                                            <div class="detail-item">
+                                                <div class="product-details">
+                                                    <a class="remove-item-cart" href="index.html" onclick="removeitemcart()">×</a>
+                                                    <p class="product-name">
+                                                        <a href="#">Totto-Chan Bên Cửa Sổ</a>
+                                                    </p>
+                                                </div>
+                                                <div class="product-details-bottom">
+                                                    <span class="price pricechange">
+                                                        88.200₫
+                                                    </span>
+                                                </div>
+                                                <div class="form-product">
+                                                    <form class="add-to-cart-form">
+                                                        <div class="form-group">
+                                                            <div class="qty-ant custom-btn-number">
+                                                                <div class="custom custom-btn-numbers form-control">
+                                                                    <button type="button" class="btn-minus btn-cts">
+                                                                        -
+                                                                    </button>
+                                                                    <input type="text" class="qty input-text" disabled name="quantity" size="4" value="1" maxlength="3">
+                                                                    <button type="button" class="btn-plus btn-cts">
+                                                                        +
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div>
+                            <div class=""></div>
+                        </div>
+                        <div>
+                            <div class=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id ="header-2">
+                <div>
+                    <ul id="nav-header-2">
+                        <li><a href="index.html" class="color-rgba">Trang chủ</a></li>
+                        <li><a href="introduction.html" class="">Giới thiệu</a></li>
+                        <li><a href="Product.html">Sản phẩm
+                            <div class="ti-arrow-down-1">
+                                <img src="./assets/gifs/down.png" alt="arrow-down">
+                            </div>
+                            </a>
+                            <ul class="nav-2-subnav-1">
+                                <li>
+                                    <a href="#">Tủ Sách
+                                        <div class="arrow-down">
+                                            <img src="./assets/gifs/down.png" alt="arrow-down">
+                                        </div>
+                                        <ul class="list-1 list-main">
+                                            <li><a href="#">Văn Học</a></li>
+                                            <li><a href="#">Tâm Lý - Kỹ Năng Sống</a></li>
+                                            <li><a href="#">Nuôi Dạy Con</a></li>
+                                            <li><a href="#">Ngoại Ngữ</a></li>
+                                            <li><a href="#">Phụ Nữ</a></li>
+                                            <li><a href="#">Kinh Doanh - Kinh Tế</a></li>
+                                            <li><a href="#">Luật</a></li>
+                                            <li><a href="#">Nấu Ăn - Nuôi Trồng</a></li>
+                                            <li><a href="#">Y Học</a></li>
+                                            <li><a href="#">Thiếu Nhi</a></li>
+                                            <li><a href="#">Sách Khoa Học</a></li>
+                                            <li><a href="#">Lịch Sử - Địa Lí - Tôn Giáo</a></li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li><a href="#">Sách Giáo Khoa
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">Sách cấp 1</a></li>
+                                        <li><a href="#">Sách cấp 2</a></li>
+                                        <li><a href="#">Sách cấp 3</a></li>
+                                        <li><a href="#">Sách thi Đại Học</a></li>
+                                        <li><a href="#">Sách Giáo Viên</a></li>
+                                        <li><a href="#">Sách Đại Học</a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">Dụng Cụ Học Sinh
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">Balo - Cặp</a></li>
+                                        <li><a href="#">Bút - Viết</a></li>
+                                        <li><a href="#">Tẩy</a></li>
+                                        <li><a href="#">Dụng Cụ Đo</a></li>
+                                        <li><a href="#">Sản Phẩm Điện Tử</a></li>
+                                        <li><a href="#">Túi Bút - Hộp Bút</a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">Văn Phòng Phẩm
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">Con dấu - Hộp dấu</a></li>
+                                        <li><a href="#">Dụng Cụ Vẽ</a></li>
+                                        <li><a href="#">Đèn - Bàn học</a></li>
+                                        <li><a href="#">Sản Phẩm Về Giấy</a></li>
+                                        <li><a href="#">Sản Phẩm VPP Khác</a></li>
+                                        <li><a href="#">Sổ - Vở</a></li>
+                                        <li><a href="#">Túi Bút - Hộp Bút</a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">Thế Giới Đồ chơi
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">Board Game</a></li>
+                                        <li><a href="#">Cờ</a></li>
+                                        <li><a href="#">Đất Nặn - Slam</a></li>
+                                        <li><a href="#">Búp Bê</a></li>
+                                        <li><a href="#">Ô tô</a></li>
+                                        <li><a href="#">Đồ Chơi Âm Nhạc</a></li>
+                                        <li><a href="#">Đồ Chơi Cót</a></li>
+                                        <li><a href="#">Đồ Chơi Gỗ</a></li>
+                                        <li><a href="#">Đồ Chơi Sato - Antona</a></li>
+                                        <li><a href="#">LEGO</a></li>
+                                        <li><a href="#">Mô Hình</a></li>
+                                        <li><a href="#">Robot</a></li>
+                                        <li><a href="#">Rubik</a></li>
+                                        <li><a href="#">Đồ Chơi Câu Cá</a></li>
+                                        <li><a href="#">Đồ Chơi Giáo Dục</a></li>
+                                        <li><a href="#">Đồ Chơi Trẻ Em</a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">Dịch Vụ Khu Vui Chơi
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">36 Xuân Thủy</a></li>
+                                        <li><a href="#">424 Nguyễn Trãi</a></li>
+                                        <li><a href="#">828 Đường Láng</a></li>
+                                        <li><a href="#">697 Giải Phóng</a></li>
+                                    </ul>
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="">Khuyến mại nối bật
+                            <div class="ti-arrow-down-1">
+                                <img src="./assets/gifs/down.png" alt="arrow-down">
+                            </div>
+                            </a>
+                            <ul class="nav-2-subnav-2">
+                                <li><a href="promotions1.html">Tặng voucher 50%</a></li>
+                                <li><a href="#">Lịch Tết</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="News.html" class="">Tin tức</a></li>
+                        <li><a href="contact.html" class="">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end - header -->
+        
+        <!-- begin - section-1 -->
+        <div id="section-1">
+            <div id="slider">
+                <a href="#">
+                    <img id="img" src="./assets/imgs/slider_1.png" alt="GIẢM 10%" class="img-1">
+                </a>
+                <ul class="btn-slider">
+                    <li>
+                        <button type="button" id="prev" onclick="prev()"></button>
+                    </li>
+
+                    <li>
+                        <button type="button" id="next" onclick="next()"></button>
+                    </li>
+                </ul>
+                <script type="text/javascript" src="./assets/js/slider.js"></script>
+            </div>
+        </div>
+        <!-- end - section-1 -->
+        <!-- begin - section-2 -->
+        <div id="section-2">
+            <div class="container">
+                <div class="row">
+                    <div class="con-1">
+                        
+                            <div class="sub-nav-1">
+                                <div class="box-1 box-general">
+                                    <a href="#">
+                                        <img src="./assets/gifs/noimage.gif" alt="">
+                                        <p>Tủ Sách</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="sub-nav-2">
+                                <div class="box-2 box-general">
+                                    <a href="#">
+                                        <img src="./assets/imgs/sachgiaokhoa.jpg" alt="">
+                                        <p>Sách Giáo Khoa</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="sub-nav-3">
+                                <div class="box-3 box-general">
+                                    <a href="#">
+                                        <img src="./assets/imgs/dungcuhoctap.jpg" alt="">
+                                        <p>Dụng Cụ Học Sinh</p>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="sub-nav-4">
+                                <div class="box-4 box-general">
+                                    <a href="#">
+                                        <img src="./assets/imgs/vanphongpham.jpg" alt="">
+                                        <p>Văn Phòng Phẩm</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="sub-nav-5">
+                                <div class="box-5 box-general">
+                                    <a href="">
+                                        <img src="./assets/imgs/dochoi.jpg" alt="">
+                                        <p>Thế Giới đồ chơi</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="sub-nav-6">
+                                <div class="box-6 box-general">
+                                    <a href="#">
+                                        <img src="./assets/imgs/khuvuichoi.jpg" alt="">
+                                        <p>Dịch Vụ Khu Vui Chơi</p>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="con-2">
+                        <a href="#"><img src="./assets/imgs/feature_cate_image_1.jpg" alt="FREE SHIPER Trong bán kính 2km"></a>
+                        <a href="#"> <img src="./assets/imgs/feature_cate_image_2.jpg" alt="TẶNG VOURCHER 50% cho đơn hàng online trên 500k "></a>
+                        <a href="#"> <img src="./assets/imgs/feature_cate_image_3.jpg" alt="Tổng đài tư vấn 24/7"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end - section-2 -->
+
+        <!-- begin - section-3 -->
+        <div id="section-3">
+            <div class="section-sport">
+                <div class="container">
+                    <div class="row">
+                        <div class="sport-title">
+                            <img class="mg-auto" src="./assets/imgs/sport_title.jpg" alt="Danh mục nổi bật">
+                            <p>Danh mục nổi bật</p>
+                        </div>
+
+                        <div class="sport-slider">
+                            <div class="slider-item">
+                                <a href="#">
+                                    <img src="./assets/gifs/noimage.gif" alt="">
+                                    <p>Tủ Sách</p>
+                                </a>
+                            </div>
+                            <div class="slider-item">
+                                <a href="#">
+                                    <img src="./assets/imgs/sachgiaokhoa.jpg" alt="">
+                                    <p>Sách Giáo Khoa</p>
+                                </a>
+                            </div>
+                            <div class="slider-item">
+                                <a href="#">
+                                    <img src="./assets/imgs/dungcuhoctap.jpg" alt="">
+                                    <p>Dụng Cụ Học Sinh</p>
+                                </a>
+                            </div>
+                            <div class="slider-item">
+                                <a href="#">
+                                    <img src="./assets/imgs/vanphongpham.jpg" alt="">
+                                    <p>Văn Phòng Phẩm</p>
+                                </a>
+                            </div>
+                            <div class="slider-item">
+                                <a href="#">
+                                    <img src="./assets/imgs/dochoi.jpg" alt="">
+                                    <p>Thế giới Đồ Chơi</p>
+                                </a>
+                            </div>
+                            <div class="slider-item">
+                                <a href="#">
+                                    <img src="./assets/imgs/khuvuichoi.jpg" alt="">
+                                    <p>Dịch Vụ Khu Vui Chơi</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end - section-3 -->
+
+        <!-- begin - section-4 -->
+        <div id="section-4">
+            <div class="container">
+                <div class="row">
+                    <div class="section_best_sale_product">
+                        <a href="#" class="title-a" title="Sản phẩm nối bật">
+                            <script>
+                                var run = 0;
+                                var message="Sản phẩm nối bật"//Chữ cần tạo hiệu ứng
+                                var neonbasecolor="#fff"//Mầu chữ ban đầu
+                                var neontextsize="40"
+                                var neontextcolor="#89ff00"//Hiệu ứng mầu 1
+                                var neontextcolor2="#ccc"//Hiệu ứng mầu 2
+                                var flashspeed=100 //Tốc độ của hiệu ứng
+                                var flashingletters=3 // Số chữ thay đổi màu của lần 1
+                                var flashingletters2=1 // Số chữ thay đổi màu của lần 2
+                                var flashpause=0 // the pause between flash-cycles in milliseconds
+                                ///No need to edit below this line/////
+                                var n=0;
+                                if (document.all||document.getElementById){
+                                        document.write('<font color="'+neonbasecolor+'">')
+                                        for (m=0;m<message.length;m++)
+                                        document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+                                        document.write('</font>')
+                                    }
+                                else
+                                    document.write(message)
+                                    function crossref(number){
+                                        var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+                                        return crossobj
+                                    }
+                                function neon(){
+                                    if(run==1){
+                                        neontextcolor="yellow"//Hiệu ứng mầu 1
+                                    }else{
+                                        neontextcolor="#89ff00"//Hiệu ứng mầu 1
+                                    }
+                                //Change all letters to base color
+                                    if (n==0){
+                                        for (m=0;m<message.length;m++)
+                                        crossref(m).style.color=neonbasecolor;
+                                    }
+                                    //cycle through and change individual letters to neon color
+                                    crossref(n).style.color=neontextcolor;
+                                    if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2
+                                    if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
+                                    if (n<message.length-1)
+                                        n++;
+                                    else{
+                                        n=0
+                                        clearInterval(flashing)
+                                        setTimeout("beginneon()",flashpause)
+                                        return
+                                        }
+                                    if(run==2){
+                                        run=0;
+                                }
+                                }
+                                function beginneon(){
+                                if (document.all||document.getElementById)
+                                    flashing=setInterval("neon()",flashspeed);
+                                    run++;
+                                }
+                                beginneon()
+                                </script>
+                        </a>
+                        <div class="best-sell-slick">
+                            <div class="slick-list">
+                                <div class="slick-track">
+                                    <!-- 1-------------------------- -->
+                                    <div class="item">
+                                        <div class="nav-slick-track float-left">
+                                            <div class="product-img">
+                                                <a href="detailsproduct1.html"><img src="./assets/imgs/sach1.jpg" alt=""></a>
+                                            </div>
+                                            <div class="product-action">
+                                                <form action="" class="from-action">
+                                                    <a href="cartproduct.html">
+                                                    <button type="button" class="btn-action add-to-cart" id="buy-now" onclick="buynow()" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                    </a>
+                                                    <a>
+                                                        <button type="button" class="btn-action add-to-cart" onclick="addcart()" title="Thêm vào giỏ">
+                                                            <div class="ti-shopping">
+                                                                <img src="./assets/gifs/cart.png">
+                                                            </div>
+                                                        </button>
+                                                    </a>
+                                                </form>
+                                            </div>
+                                            <div class="active-has-add">Đã thêm sản phẩm này vào giỏ hàng!</div>
+
+                                            <script>
+                                                //mua ngay
+                                                if(localStorage.getItem('count')==null)
+                                                    localStorage.setItem('count', 0);
+                                                function buynow () {
+                                                    var citem = parseInt($(document).find('#count-item').data('count')) + 1;
+                                                    $(document).find('#count-item').text(citem).data('count', citem);
+                                                    localStorage.setItem('count',citem);
+                                                }
+                                                //them vao gio
+                                                function addcart() {
+                                                    var citem = parseInt($(document).find('#count-item').data('count')) + 1;
+                                                    $(document).find('#count-item').text(citem).data('count', citem);
+                                                    localStorage.setItem('count',citem);
+                                                    document.querySelector('.no-item-cart').classList.remove("active")
+                                                    document.querySelector('.list-item-cart').classList.add("has-item-cart");
+                                                    document.querySelector('.active-has-add').style.display = "block";
+                                                    setTimeout(hide, 2000);
+                                                }
+                                                function hide(){
+                                                    document.querySelector('.active-has-add').style.display = "none";
+                                                }
+                                                if(localStorage.getItem('count')==0){
+                                                    var citem = 0;
+                                                    $(document).find('#count-item').text(citem).data('count', citem);
+                                                    $(".no-item-cart").text("Không có sản phẩm nào trong giỏ hàng.");
+                                                    document.querySelector('.no-item-cart').classList.add("active");
+                                                    document.querySelector('.list-item-cart').classList.remove("has-item-cart");
+                                                }else if(localStorage.getItem('count')>=1){
+                                                    document.querySelector('.no-item-cart').classList.remove("active")
+                                                    document.querySelector('.list-item-cart').classList.add("has-item-cart");
+                                                }
+                                                function removeitemcart() {
+                                                    localStorage.setItem('count', 0);
+                                                    $(".no-item-cart").text("Không có sản phẩm nào trong giỏ hàng.");
+                                                    document.querySelector('.no-item-cart').classList.add("active");
+                                                }
+
+                                                $(document).find('#count-item').text(localStorage.getItem('count')).data('count',localStorage.getItem('count'));
+                                            </script>
+        
+                                            <div class="product-badge">- 10%</div>
+        
+                                            <div class="product-info">
+                                                <h3 class="product-title">
+                                                    <a href="detailsproduct1.html" title="Totto-Chan Bên Cửa Sổ">Totto-Chan Bên Cửa Sổ</a>
+                                                </h3>
+                                                <span class="product-price-wrapper">
+                                                    <span class="money">88.200₫</span>
+                                                    <span class="money-old">98.000₫</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 2--------------------------- -->
+                                    <div class="item">
+                                        <div class="nav-slick-track float-left">
+                                            <div class="product-img">
+                                                <a href="#"><img src="./assets/imgs/sach2.jpg" alt=""></a>
+                                            </div>
+        
+                                            <div class="product-action">
+                                                <form action="" class="from-action">
+                                                    <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                </form>
+                                            </div>
+        
+                                            <div class="product-badge">- 10%</div>
+        
+                                            <div class="product-info">
+                                                <h3 class="product-title">
+                                                    <a href="#" title="Mười Ba Lý Do">Mười Ba Lý Do</a>
+                                                </h3>
+                                                <span class="product-price-wrapper">
+                                                    <span class="money">90.000₫</span>
+                                                    <span class="money-old">100.000₫</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 3------------------------------- -->
+                                    <div class="item">
+                                        <div class="nav-slick-track float-left">
+                                            <div class="product-img">
+                                                <a href="#"><img src="./assets/imgs/sach3.jpg" alt=""></a>
+                                            </div>
+        
+                                            <div class="product-action">
+                                                <form action="" class="from-action">
+                                                    <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                </form>
+                                            </div>
+        
+                                            <div class="product-badge">- 10%</div>
+        
+                                            <div class="product-info">
+                                                <h3 class="product-title">
+                                                    <a href="#" title="Bán Niềm Tin">Bán Niềm Tin</a>
+                                                </h3>
+                                                <span class="product-price-wrapper">
+                                                    <span class="money">151.200₫</span>
+                                                    <span class="money-old">168.000₫</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 4------------------------------- -->
+                                    <div class="item">
+                                        <div class="nav-slick-track float-left">
+                                            <div class="product-img">
+                                                <a href="#"><img src="./assets/imgs/sach4.jpg" alt=""></a>
+                                            </div>
+        
+                                            <div class="product-action">
+                                                <form action="" class="from-action">
+                                                    <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                </form>
+                                            </div>
+        
+                                            <div class="product-badge">- 10%</div>
+        
+                                            <div class="product-info">
+                                                <h3 class="product-title">
+                                                    <a href="#" title="Cuộc Đời Không Phụ Lòng Người Nỗ Lực">Cuộc Đời Không Phụ Lòng Người Nỗ Lực</a>
+                                                </h3>
+                                                <span class="product-price-wrapper">
+                                                    <span class="money">116.100₫</span>
+                                                    <span class="money-old">129.000₫</span>
+                                                </span>
+                                            </div>
+                                            
+                                        </div >
+                                    </div>
+                                    <!-- 5------------------------------- -->
+                                    <div class="item">
+                                        <div class="nav-slick-track float-left">
+                                            <div class="product-img">
+                                                <a href="#"><img src="./assets/imgs/sach5.jpg" alt=""></a>
+                                            </div>
+        
+                                            <div class="product-action">
+                                                <form action="" class="from-action">
+                                                    <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                </form>
+                                            </div>
+        
+                                            <div class="product-badge">- 10%</div>
+        
+                                            <div class="product-info">
+                                                <h3 class="product-title">
+                                                    <a href="#" title="Tạo Dựng Thương Hiệu Cá Nhân">Tạo Dựng Thương Hiệu Cá Nhân</a>
+                                                </h3>
+                                                <span class="product-price-wrapper">
+                                                    <span class="money">80.100₫</span>
+                                                    <span class="money-old">89.000₫</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 6------------------------------ -->
+                                    <div class="item">
+                                        <div class="nav-slick-track float-left">
+                                            <div class="product-img">
+                                                <a href="#"><img src="./assets/imgs/sach6.jpg" alt=""></a>
+                                            </div>
+        
+                                            <div class="product-action">
+                                                <form action="" class="from-action">
+                                                    <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                </form>
+                                            </div>
+        
+                                            <div class="product-badge">- 10%</div>
+        
+                                            <div class="product-info">
+                                                <h3 class="product-title">
+                                                    <a href="#" title="Content Đắt Có Bắt Được Trend">Content Đắt Có Bắt Được Trend</a>
+                                                </h3>
+                                                <span class="product-price-wrapper">
+                                                    <span class="money">107.100₫</span>
+                                                    <span class="money-old">119.000₫</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 7----------------------------- -->
+                                    <div class="item">
+                                        <div class="nav-slick-track float-left">
+                                            <div class="product-img">
+                                                <a href="#"><img src="./assets/imgs/sach7.jpg" alt=""></a>
+                                            </div>
+        
+                                            <div class="product-action">
+                                                <form action="" class="from-action">
+                                                    <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                </form>
+                                            </div>
+        
+                                            <div class="product-badge">- 10%</div>
+        
+                                            <div class="product-info">
+                                                <h3 class="product-title">
+                                                    <a href="#" title="Yếu Tố Phát Triển Thương Hiệu Bền Vững - Lấy Khách Hàng Làm Trung Tâm">Yếu Tố Phát Triển Thương Hiệu Bền Vững - Lấy Khách Hàng Làm Trung Tâm</a>
+                                                </h3>
+                                                <span class="product-price-wrapper">
+                                                    <span class="money">125.100₫</span>
+                                                    <span class="money-old">139.000₫</span>
+                                                </span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="controls">
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="./assets/js/script.js"></script></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end - section-4 -->
+        
+        <!-- Begin - section-5 -->
+        <div id="section-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-m-p">
+                        <div class="section-product-title-and-menu">
+                            <h3><a href="#" title="Tủ sách">Tủ sách</a></h3>
+                            <aside class="viewmore">
+                                <a href="#" title="Văn học">Văn học</a>
+                                <a href="#" title="Tâm Lý - Kỹ Năng Sống">Tâm Lý - Kỹ Năng Sống</a>
+                                <a href="#" title="Nuôi Dạy Con">Nuôi Dạy Con</a>
+                                <a href="#" title="Ngoại Ngữ">Ngoại Ngữ</a>
+                                <a href="#" title="Phụ Nữ">Phụ Nữ</a>
+                            </aside>
+                        </div>
+
+                        <div class="product-contain">
+                            <div class="product-contain-1">
+                                <div class="product-contain-banner">
+                                    <div class="banner-1">
+                                        <a href="#">
+                                            <img src="./assets/imgs/evo_block_product_1_image_1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="">
+                                        <a href="#">
+                                            <img src="./assets/imgs/evo_block_product_1_image_2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-contain-2">
+                                <div class="product-contain-block">
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/s1.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn">Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">45.000₫</span>
+                                                <span class="money-old">50.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/s2.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn">Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">45.000₫</span>
+                                                <span class="money-old">50.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/s3.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn">Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">45.000₫</span>
+                                                <span class="money-old">50.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/s4.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn">Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">45.000₫</span>
+                                                <span class="money-old">50.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/s5.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn">Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">45.000₫</span>
+                                                <span class="money-old">50.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/s6.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn">Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">45.000₫</span>
+                                                <span class="money-old">50.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="">
+                                                <img src="./assets/imgs/s7.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn">Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">45.000₫</span>
+                                                <span class="money-old">50.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/s8.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn">Nhật Ký Trưởng Thành Của Đứa Trẻ Ngoan - Làm Một Người Biết Ơn</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">45.000₫</span>
+                                                <span class="money-old">50.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end - section-5 -->
+        
+        <!-- Begin-section-6 -->
+        <div id="section-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-m-p">
+                        <div class="section-product-title-and-menu">
+                            <h3><a href="#" title="Sách giáo khoa">Sách giáo khoa</a></h3>
+                            <aside class="viewmore">
+                                <a href="#" title="Sách cấp 1">Sách cấp 1</a>
+                                <a href="#" title="Sách cấp 2">Sách cấp 2</a>
+                                <a href="#" title="Sách cấp 3">Sách cấp 3</a>
+                                <a href="#" title="Sách thi Đại Học">Sách thi Đại Học</a>
+                                <a href="#" title="Sách Giáo Viên">Sách Giáo Viên</a>
+                            </aside>
+                        </div>
+
+                        <div class="product-contain">
+                            <div class="product-contain-1">
+                                <div class="product-contain-banner">
+                                    <div class="banner-1">
+                                        <a href="#">
+                                            <img src="./assets/imgs/evo_block_product_2_image_1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="">
+                                        <a href="#">
+                                            <img src="./assets/imgs/evo_block_product_2_image_2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-contain-2">
+                                <div class="product-contain-block">
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/evo-2-1.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="10 Bài Toán Trọng Điểm Hình Học Phẳng Oxy (Phiên Bản Mới Nhất)">10 Bài Toán Trọng Điểm Hình Học Phẳng Oxy (Phiên Bản Mới Nhất)</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">143.100₫</span>
+                                                <span class="money-old">159.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/evo-2-2.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="10 Chuyên Đề Bồi Dưỡng Học Sinh Giỏi Toán 4, 5 - Tập 2">10 Chuyên Đề Bồi Dưỡng Học Sinh Giỏi Toán 4, 5 - Tập 2</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">27.000₫</span>
+                                                <span class="money-old">30.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/evo-2-3.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="100 BÀI PHÂN TÍCH BÌNH GIẢNG BÌNH LUẬN VĂN HỌC">100 BÀI PHÂN TÍCH BÌNH GIẢNG BÌNH LUẬN VĂN HỌC</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">79.200₫</span>
+                                                <span class="money-old">88.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/evo-2-4.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="100 Bài Tập Làm Văn Mẫu Lớp 5">100 Bài Tập Làm Văn Mẫu Lớp 5</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">34.200₫</span>
+                                                <span class="money-old">38.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/evo-2-5.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="100 Đề Kiểm Tra Địa Lí 6 - 15 Phút - 45 Phút - Học Kì">100 Đề Kiểm Tra Địa Lí 6 - 15 Phút - 45 Phút - Học Kì</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">54.000₫</span>
+                                                <span class="money-old">60.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/evo-2-6.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="100 Đề Kiểm Tra Địa Lí 7">100 Đề Kiểm Tra Địa Lí 7</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">62.100₫</span>
+                                                <span class="money-old">69.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="">
+                                                <img src="./assets/imgs/evo-2-7.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="100 Đề Kiểm Tra Học Kỳ Lớp 9 Và Ôn Thi Vào Lớp 10 THPT Môn Toán">100 Đề Kiểm Tra Học Kỳ Lớp 9 Và Ôn Thi Vào Lớp 10 THPT Môn Toán</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">76.500₫</span>
+                                                <span class="money-old">85.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/evo-2-8.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-badge">- 10%</div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="100 Đề Kiểm Tra Ngữ Văn 10">100 Đề Kiểm Tra Ngữ Văn 10</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">67.500₫</span>
+                                                <span class="money-old">75.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end-section-6 -->
+
+        <!-- Begin-section-7 -->
+        <div id="section-7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-m-p">
+                        <div class="section-product-title-and-menu">
+                            <h3><a href="#" title="Văn phòng phẩm">Văn phòng phẩm</a></h3>
+                            <aside class="viewmore">
+                                <a href="#" title="Con dấu - Hộp dấu">Con dấu - Hộp dấu</a>
+                                <a href="#" title="Dụng Cụ Vẽ">Dụng Cụ Vẽ</a>
+                                <a href="#" title="Đèn - Bàn học">Đèn - Bàn học</a>
+                                <a href="#" title="Sản Phẩm Về Giấy">Sản Phẩm Về Giấy</a>
+                                <a href="#" title="Sản Phẩm VPP Khác">Sản Phẩm VPP Khác</a>
+                            </aside>
+                        </div>
+
+                        <div class="product-contain">
+                            <div class="product-contain-1">
+                                <div class="product-contain-banner">
+                                    <div class="banner-1">
+                                        <a href="#">
+                                            <img src="./assets/imgs/evo_block_product_3_image_1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="">
+                                        <a href="#">
+                                            <img src="./assets/imgs/evo_block_product_3_image_2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-contain-2">
+                                <div class="product-contain-block">
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/8ho8-keo-dan-mic.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Keo Dán MIC (24ml)">Keo Dán MIC (24ml)</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">3.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/keonuoc.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Keo Nước Smartkids SK-121 15ml">Keo Nước Smartkids SK-121 15ml</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">4.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/phan1.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Phấn Trắng Không Bụi Đức Thanh (10 Viên)">Phấn Trắng Không Bụi Đức Thanh (10 Viên)</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">4.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/phan2.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Phấn Trắng Không Bụi MIC - Hộp 10 Viên">Phấn Trắng Không Bụi MIC - Hộp 10 Viên</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">4.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/phan-mau.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Phấn Màu Không Bụi Đức Thanh (10 Viên)">Phấn Màu Không Bụi Đức Thanh (10 Viên)</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">4.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/pha-n-va-ng-2.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Phấn Nét Hoa Không Bụi Đức Thanh (12 Viên)">Phấn Nét Hoa Không Bụi Đức Thanh (12 Viên)</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">4.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="">
+                                                <img src="./assets/imgs/bang-keo-van-phong-18cm-17-yard-min.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Băng Dính Văn Phòng 1.8cm B4">Băng Dính Văn Phòng 1.8cm B4</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">4.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/keodangiay.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Keo Dán Giấy WinQ No.218 (50ml)">Keo Dán Giấy WinQ No.218 (50ml)</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">5.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end-section-7 -->
+        
+        <!-- Begin-section-8 -->
+        <div id="section-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-m-p">
+                        <div class="section-product-title-and-menu">
+                            <h3><a href="#" title="Thế giới đồ chơi">Thế giới đồ chơi</a></h3>
+                            <aside class="viewmore">
+                                <a href="#" title="Board Game">Board Game</a>
+                                <a href="#" title="Cờ">Cờ</a>
+                                <a href="#" title="Đất Nặn - Slam">Đất Nặn - Slam</a>
+                                <a href="#" title="Búp Bê">Búp Bê</a>
+                                <a href="#" title="Ô tô">Ô tô</a>
+                            </aside>
+                        </div>
+
+                        <div class="product-contain">
+                            <div class="product-contain-1">
+                                <div class="product-contain-banner">
+                                    <div class="banner-1">
+                                        <a href="#">
+                                            <img src="./assets/imgs/evo_block_product_4_image_1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="">
+                                        <a href="#">
+                                            <img src="./assets/imgs/evo_block_product_4_image_2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-contain-2">
+                                <div class="product-contain-block">
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/evo-4-1.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="187 Tầu điều khiển">187 Tầu điều khiển</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">292.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img class="block-img-2" src="./assets/imgs/evo-4-2.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Chơi cùng Catty HH8303">Chơi cùng Catty HH8303</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">470.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/evo-4-3.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="COMBO: 4 ĐỒ CHƠI LÚC LẮC CHO TRẺ DK580012">COMBO: 4 ĐỒ CHƠI LÚC LẮC CHO TRẺ DK580012</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">150.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="#">
+                                            <a href="nav-block-1">
+                                                <img src="./assets/imgs/evo-4-4.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Vali kéo Bếp làm bánh Humburger">Vali kéo Bếp làm bánh Humburger</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">185.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/evo-4-5.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Splendor - Cuộc chiến đá quý">Splendor - Cuộc chiến đá quý</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">880.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/evo-4-6.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Boardgame Gizmos Việt - Cỗ máy tối thượng">Boardgame Gizmos Việt - Cỗ máy tối thượng</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">990.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="">
+                                                <img class="block-img-7" src="./assets/imgs/evo-4-7.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Puzzle Khủng Long Parasaurolophus">Puzzle Khủng Long Parasaurolophus</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">95.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img class="block-img-8" src="./assets/imgs/evo-4-8.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Mua ngay">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/muangay1.jpg">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                                <a href="#">
+                                                    <button type="button" class="btn-action add-to-cart" title="Thêm vào giỏ">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/cart.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Xe Tăng 9993">Xe Tăng 9993</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">416.000₫</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End-section-8 -->
+        
+        <!-- Begin-section-9 -->
+        <div id="section-9">
+            <div class="container">
+                <div class="row">
+                    <div class="col-m-p">
+                        <div class="section-product-title-and-menu">
+                            <h3><a href="#" title=" Dịch vụ khu vui chơi"> Dịch vụ khu vui chơi</a></h3>
+                            <aside class="viewmore">
+                                <a href="#" title="36 Xuân Thủy">36 Xuân Thủy</a>
+                                <a href="#" title="424 Nguyễn Trãi">424 Nguyễn Trãi</a>
+                                <a href="#" title="828 Đường Láng">828 Đường Láng</a>
+                                <a href="#" title="697 Giải Phóng">697 Giải Phóng</a>
+                            </aside>
+                        </div>
+
+                        <div class="product-contain">
+                            <div class="product-contain-1">
+                                <div class="product-contain-banner">
+                                    <div class="banner-1">
+                                        <a href="#">
+                                            <img src="./assets/imgs/evo_block_product_5_image_1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="">
+                                        <a href="#">
+                                            <img src="./assets/imgs/evo_block_product_5_image_2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-contain-2">
+                                <div class="product-contain-block">
+                                    <div class="block-1">
+                                        <div class="nav-block-1">
+                                            <a href="#">
+                                                <img src="./assets/imgs/vevaocua.jpg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-action">
+                                            <form action="" class="from-action">
+                                                <a href="#">
+                                                    <button type="button" class="btn-action cart-button" title="Chi tiết">
+                                                        <div class="ti-shopping">
+                                                            <img src="./assets/gifs/link-2.png">
+                                                        </div>
+                                                    </button>
+                                                </a>
+                                            </form>
+                                        </div>
+
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#" title="Vé Vào Cửa KVC">Vé Vào Cửa KVC</a>
+                                            </h3>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">Liên hệ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End-section-9 -->
+        
+        <!-- Begin-section-10 -->
+        <div id="section-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-m-p">
+                        <div class="section-product-title-and-menu">
+                            <h3><a href="#" title="Kiến thức thể thao">Kiến thức thể thao</a></h3>
+                        </div>
+
+                        <div class="section-product-body">
+                            <div class="nav-section-pro-body">
+                                <div class="subnav-sec-pro-body">
+                                    <div class="article-img">
+                                        <a href="#">
+                                            <img src="./assets/imgs/do-dung-hoc-tap-de-thuong-3-768x576.jpg" alt="Nên mua đồ dùng học tập dễ thương ở đâu?">
+                                        </a>
+                                        <div class="post-date">
+                                            <span class="post-date-day">10</span>
+                                            <span class="post-date-month">Thg 1, 2021</span>
+                                        </div>
+                                    </div>
+                                    <h3>
+                                        <a class="line-clamp" href="#" title="Nên mua đồ dùng học tập dễ thương ở đâu?">Nên mua đồ dùng học tập dễ thương ở đâu?</a>
+                                    </h3>
+                                    <p> Năm học mới lại đến, các bé đang náo nức đến trường, còn bố mẹ lại tất bật chuẩn bị biết bao nhiêu  đồ dùn...</p>
+                                    <a href="#" class="readmore" title="Đọc tiếp">Đọc tiếp</a>
+                                </div>
+
+                                <div class="subnav-sec-pro-body">
+                                    <div class="article-img">
+                                        <a href="#">
+                                            <img src="./assets/imgs/do-dung-hoc-tap-chat-luong-gia-re-2-768x576.jpg" alt="Nên mua đồ dùng học tập dễ thương ở đâu?">
+                                        </a>
+                                        <div class="post-date">
+                                            <span class="post-date-day">10</span>
+                                            <span class="post-date-month">Thg 1, 2021</span>
+                                        </div>
+                                    </div>
+                                    <h3>
+                                        <a class="line-clamp" href="#" title="Đồ dùng học tập chất lượng, giá rẻ">Đồ dùng học tập chất lượng, giá rẻ</a>
+                                    </h3>
+                                    <p>  Năm học mới là thời điểm bố mẹ phải bận rộn trong việc lựa chọn văn phòng phẩm, đồ dùng học tập cho trẻ. Đ...</p>
+                                    <a href="#" class="readmore" title="Đọc tiếp">Đọc tiếp</a>
+                                </div>
+
+                                <div class="subnav-sec-pro-body">
+                                    <div class="article-img">
+                                        <a href="#">
+                                            <img src="./assets/imgs/sach-tham-khao-cho-hoc-sinh-cap1-2-3-j-3-1.jpg" alt="Nên mua đồ dùng học tập dễ thương ở đâu?">
+                                        </a>
+                                        <div class="post-date">
+                                            <span class="post-date-day">10</span>
+                                            <span class="post-date-month">Thg 1, 2021</span>
+                                        </div>
+                                    </div>
+                                    <h3>
+                                        <a class="line-clamp" href="#" title="Trước khi mua sách tham khảo cho học sinh cấp 1,2,3, bố mẹ nên biết">Trước khi mua sách tham khảo cho học sinh cấp 1,2,3, bố mẹ nên biết</a>
+                                    </h3>
+                                    <p>  Năm học mới sắp bắt đầu, các bậc phụ huynh đang chuẩn bị cho con em mình những bộ sách, vở và đồ dùng thiế...</p>
+                                    <a href="#" class="readmore" title="Đọc tiếp">Đọc tiếp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End-section-10 -->
+        
+        <!-- Begin-section-11 -->
+        <div id="section-11">
+            <div class="container">
+                <div class="row">
+                    <div class="col-m-p">
+                        <div class="section-policy">
+                            <div class="row">
+                                <div class="policy-item">
+                                    <a href="#" title="Giao hàng miễn phí nội thành cho đơn hàng trên 500.000 VNĐ">
+                                        <img src="./assets/imgs/evo_policy_image_1.jpg" alt="Giao hàng miễn phí nội thành cho đơn hàng trên 500.000 VNĐ">
+                                        <p>Giao hàng miễn phí nội thành cho đơn hàng trên 500.000 VNĐ</p>
+                                    </a>
+                                </div>
+                                
+                                <div class="policy-item">
+                                    <a href="#" title="Nhiều quà tặng và khuyến mãi hấp dẫn khi mua hàng Online.">
+                                        <img src="./assets/imgs/evo_policy_image_2.jpg" alt="Nhiều quà tặng và khuyến mãi hấp dẫn khi mua hàng Online.">
+                                        <p>Nhiều quà tặng và khuyến mãi hấp dẫn khi mua hàng Online.</p>
+                                    </a>
+                                </div>
+
+                                <div class="policy-item">
+                                    <a href="#" title="100% sản phẩm chính hãng. Thanh toán khi nhận hàng">
+                                        <img src="./assets/imgs/evo_policy_image_3.jpg" alt="100% sản phẩm chính hãng. Thanh toán khi nhận hàng">
+                                        <p>100% sản phẩm chính hãng. Thanh toán khi nhận hàng</p>
+                                    </a>
+                                </div>
+
+                                <div class="policy-item">
+                                    <a href="#" title="Chính sách mua hàng hấp dẫn">
+                                        <img src="./assets/imgs/evo_policy_image_4.jpg" alt="Chính sách mua hàng hấp dẫn">
+                                        <p>Chính sách mua hàng hấp dẫn</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End-section-11 -->
+
+        <!-- Begin-Footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="subscribe-area">
+                    <div class="row-1 align-item-center">
+                        <div class="col-1">
+                            <div class="subscribe-content">
+                                <h2>Đăng ký nhận tin</h2>
+                                <p>Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.</p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="subscribe-form">
+                                <form id="mc-form" class="newsletter-form">
+                                    <div class="input-group">
+                                        <input aria-label="Địa chỉ Email" type="email" class="form-control" placeholder="Địa chỉ Email" name="EMAIL" required autocomplete="off">
+                                        <span class="input-group-append">
+                                            <button class="btn-default" type="submit" aria-label="Đăng ký nhận tin" name="subscribe">Đăng ký</button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <div class="single-footer-widget">
+                            <div class="logo">
+                                <a href="#" title="Linh - Phong Books">
+                                    <img src="./assets/imgs/logo1.png" alt="">
+                                </a>
+                                <p>
+                                    LINGPHONGBOOK
+                                    <br>
+                                    <b>Hộ Kinh Doanh nhà sách Linh Phong</b>
+                                    <br>
+                                    GPKD số 01G8019354 do UBND Quận Cầu Giấy Cấp ngày 04/12/2019
+                                </p>
+                                <ul class="footer-quick-links">
+                                    <li>
+                                        <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Chính sách vận chuyển">Chính sách vận chuyển</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                                    </li>
+                                    <li>
+                                        <a href="frompayment.html" title="Hình thức thanh toán">Hình thức thanh toán</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="social">
+                                <li>
+                                    <a href="#" title="Facebook" aria-label="Facebook">
+                                        <i class="ti-facebook"></i>
+                                        <img src="./assets/gifs/iconsfacebook.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Twitter" aria-label="Twitter">
+                                        <i class="ti-twitter-alt"></i>
+                                        <img src="./assets/gifs/43-twitter-512.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Youtube" aria-label="Youtube">
+                                        <i class="ti-youtube"></i>
+                                        <img src="./assets/gifs/youtube.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Instagram" aria-label="Instagram">
+                                        <i class="ti-instagram"></i>
+                                        <img src="./assets/gifs/instagram.png">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="single-footer-widget">
+                            <h3>Liên kết nhanh</h3>
+                            <ul class="footer-quick-links">
+                                <li>
+                                    <a href="#" title="Tủ Sách">Tủ Sách</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Sách Giáo Khoa">Sách Giáo Khoa</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Dụng Cụ Học Sinh">Dụng Cụ Học Sinh</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Văn Phòng Phẩm">Văn Phòng Phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Thế Giới Đồ Chơi">Thế Giới Đồ Chơi</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Dịch Vụ Khu Vui Chơi">Dịch Vụ Khu Vui Chơi</a>
+                                </li>
+                            </ul>
+                            <a href="#">
+                                <img class="img-footer" src="./assets/imgs/dathongbao.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="single-footer-widget">
+                            <h3>Thông tin liên hệ</h3>
+                            <div class="footer-contact-info">
+                                <li>
+                                    <span>Địa chỉ:</span>
+                                    CS1: 828 Đường Láng – Láng Thượng – Hà Nội - 094.1234.828
+                                </li>
+                                <li>
+                                    <span>Địa chỉ:</span>
+                                    CS2: 36 Xuân Thủy – Cầu Giấy – Hà Nội - 0934.173.636
+                                </li>
+                                <li>
+                                    <span>Địa chỉ:</span>
+                                    CS3: 424 Nguyễn Trãi - Thanh Xuân - Hà Nội - 0966.688.424
+                                </li>
+                                <li>
+                                    <span>Địa chỉ:</span>
+                                    CS4: 697 Giải Phóng - Hoàng Mai - Hà Nội - 0933.695.697
+                                </li>
+                                <li>
+                                    <span>Email:</span>
+                                    <a href="#">
+                                        linhphongbook@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <span>Điện thoại:</span>
+                                    <a href="#">012.1234.345</a>
+                                </li>
+                                <li>
+                                    <span>Zalo:</span>
+                                    <a href="#">0987.654.333</a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <div class="container">
+                    <div class="row-1">
+                        <div class="col-4">
+                            <span>
+                                © Bản quyền thuộc về
+                                <b>Nhà sách Linh Phong</b>
+                                <span class="thanhdoc">|</span>
+                                Cung cấp bởi
+                                <a href="#" title="Sapo">Sapo</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <a href='#' id="bttop" title="Lên đầu trang">
+                    <div class="back-to-top">
+                        <!-- <i class="btn-to-top ti-angle-double-up"></i> -->
+                        <div class="btn-to-top">
+                            <img src="./assets/gifs/preview.png">
+                        </div>
+                    </div>
+                </a>
+                <script type="text/javascript" src="assets/js/backtotop.js"></script>
+            </div>
+        </div>
+        <!-- End-Footer -->
+    </div>
+</body>
+</html>

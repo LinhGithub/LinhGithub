@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách bảo mật | Linh - Phong Books</title>
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/stylegeneral.css">
+    <link rel="stylesheet" href="./assets/css/styleformpaym.css">
+    <link rel="stylesheet" href="./assets/css/stylegeneral1.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div id ="header-1">
+                <div id="header-sec-1">
+                    <a href="#">
+                        <img id ="logo" src="./assets/imgs/logo1.png" alt="Linh - Phong Books" title="Linh - Phong Books">
+                    </a>
+                </div>
+                <div id="header-sec-2">
+                    <div id="sec-2-nav-1">
+                        <input id="text-search" class placeholder="Tìm sản phẩm..." autocomplete="off" type="text">
+                        <a href="#">
+                            <div id="btn-search-sec-2">
+                                <img src="./assets/gifs/find.png" alt="search">
+                            </div>
+                        </a>
+                    </div>
+                    <script src="./assets/js/chuchay.js"></script>
+                </div>
+                <div id="header-sec-3">
+                    <div id="sec-3-nav-1">
+                        <div>
+                            <div>
+                                <p class="time-open">Giờ mở cửa (08:00 - 22:00)</p>
+                                <p class="logo-hotline" title="Hotline">
+                                    <a href="#" class="hot-line">
+                                        <img id="nav-hotline" src="./assets/imgs/hotline.png" alt="Hotline">
+                                        098.7651.432
+                                    </a>
+                                </p>
+                                
+                                <div id="icon-user">
+                                    <img src="assets/gifs/user.png" alt="user">
+                                    <ul class="nav-user">
+                                        <li><a class="subnav-nav-user" href="login.html" title="Đăng nhập">Đăng nhập</a></li>
+                                        <li><a href="register.html" title="Đăng kí">Đăng kí</a></li>
+                                    </ul>
+                                </div>
+                                <div id="shopping-cart-mini">
+                                    <a href="cartproduct.html">
+                                        <div id="icon-shopping">
+                                            <div class="icon-shopping-cart" title="Giỏ hàng">
+                                                <img src="./assets/gifs/cart.png" alt="Giỏ hàng">
+                                            </div>
+                                            <span class="count-item-pr" id="count-item" data-count="0">0</span>
+                                        </div>
+                                    </a>
+                                    <div class="no-item-cart">
+                                        Không có sản phẩm nào trong giỏ hàng.
+                                    </div>
+                                    <div class="list-item-cart">
+                                        <div class="item-cart">
+                                            <a href="#" title="Totto-Chan Bên Cửa Sổ" class="product-image">
+                                                <img src="./assets/imgs/sach1.jpg">
+                                            </a>
+                                            <div class="detail-item">
+                                                <div class="product-details">
+                                                    <a class="remove-item-cart" href="frompayment.html" onclick="removeitemcart()">×</a>
+                                                    <p class="product-name">
+                                                        <a href="#">Totto-Chan Bên Cửa Sổ</a>
+                                                    </p>
+                                                </div>
+                                                <div class="product-details-bottom">
+                                                    <span class="price pricechange">
+                                                        88.200₫
+                                                    </span>
+                                                </div>
+                                                <div class="form-product">
+                                                    <form class="add-to-cart-form">
+                                                        <div class="clearfix form-group">
+                                                            <div class="qty-ant clearfix custom-btn-number">
+                                                                <div class="custom custom-btn-numbers form-control">
+                                                                    <button type="button" class="btn-minus btn-cts">
+                                                                        -
+                                                                    </button>
+                                                                    <input type="text" class="qty input-text" disabled name="quantity" size="4" value="1" maxlength="3">
+                                                                    <button type="button" class="btn-plus btn-cts">
+                                                                        +
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div>
+                            <div class=""></div>
+                        </div>
+                        <div>
+                            <div class=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).find('#count-item').text(localStorage.getItem('count')).data('count',localStorage.getItem('count'));
+                if(localStorage.getItem('count')==0){
+                    document.querySelector('.no-item-cart').classList.add("active")
+                    document.querySelector('.list-item-cart').classList.remove("has-item-cart");
+                }else if(localStorage.getItem('count')>=1){
+                    document.querySelector('.no-item-cart').classList.remove("active")
+                    document.querySelector('.list-item-cart').classList.add("has-item-cart");
+                }
+                function removeitemcart() {
+                    localStorage.setItem('count', 0);
+                }
+            </script>
+            <div id ="header-2">
+                <div>
+                    <ul id="nav-header-2">
+                        <li><a href="index.html" class="">Trang chủ</a></li>
+                        <li><a href="introduction.html" class="">Giới thiệu</a></li>
+                        <li><a href="Product.html" class="">Sản phẩm
+                            <div class="ti-arrow-down-1">
+                                <img src="./assets/gifs/down.png" alt="arrow-down">
+                            </div>
+                            </a>
+                            <ul class="nav-2-subnav-1">
+                                <li><a href="#">Tủ Sách
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">Văn Học</a></li>
+                                        <li><a href="#">Tâm Lý - Kỹ Năng Sống</a></li>
+                                        <li><a href="#">Nuôi Dạy Con</a></li>
+                                        <li><a href="#">Ngoại Ngữ</a></li>
+                                        <li><a href="#">Phụ Nữ</a></li>
+                                        <li><a href="#">Kinh Doanh - Kinh Tế</a></li>
+                                        <li><a href="#">Luật</a></li>
+                                        <li><a href="#">Nấu Ăn - Nuôi Trồng</a></li>
+                                        <li><a href="#">Y Học</a></li>
+                                        <li><a href="#">Thiếu Nhi</a></li>
+                                        <li><a href="#">Sách Khoa Học</a></li>
+                                        <li><a href="#">Lịch Sử - Địa Lí - Tôn Giáo</a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">Sách Giáo Khoa
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">Sách cấp 1</a></li>
+                                        <li><a href="#">Sách cấp 2</a></li>
+                                        <li><a href="#">Sách cấp 3</a></li>
+                                        <li><a href="#">Sách thi Đại Học</a></li>
+                                        <li><a href="#">Sách Giáo Viên</a></li>
+                                        <li><a href="#">Sách Đại Học</a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">Dụng Cụ Học Sinh
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">Balo - Cặp</a></li>
+                                        <li><a href="#">Bút - Viết</a></li>
+                                        <li><a href="#">Tẩy</a></li>
+                                        <li><a href="#">Dụng Cụ Đo</a></li>
+                                        <li><a href="#">Sản Phẩm Điện Tử</a></li>
+                                        <li><a href="#">Túi Bút - Hộp Bút</a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">Văn Phòng Phẩm
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">Con dấu - Hộp dấu</a></li>
+                                        <li><a href="#">Dụng Cụ Vẽ</a></li>
+                                        <li><a href="#">Đèn - Bàn học</a></li>
+                                        <li><a href="#">Sản Phẩm Về Giấy</a></li>
+                                        <li><a href="#">Sản Phẩm VPP Khác</a></li>
+                                        <li><a href="#">Sổ - Vở</a></li>
+                                        <li><a href="#">Túi Bút - Hộp Bút</a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">Thế Giới Đồ chơi
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">Board Game</a></li>
+                                        <li><a href="#">Cờ</a></li>
+                                        <li><a href="#">Đất Nặn - Slam</a></li>
+                                        <li><a href="#">Búp Bê</a></li>
+                                        <li><a href="#">Ô tô</a></li>
+                                        <li><a href="#">Đồ Chơi Âm Nhạc</a></li>
+                                        <li><a href="#">Đồ Chơi Cót</a></li>
+                                        <li><a href="#">Đồ Chơi Gỗ</a></li>
+                                        <li><a href="#">Đồ Chơi Sato - Antona</a></li>
+                                        <li><a href="#">LEGO</a></li>
+                                        <li><a href="#">Mô Hình</a></li>
+                                        <li><a href="#">Robot</a></li>
+                                        <li><a href="#">Rubik</a></li>
+                                        <li><a href="#">Đồ Chơi Câu Cá</a></li>
+                                        <li><a href="#">Đồ Chơi Giáo Dục</a></li>
+                                        <li><a href="#">Đồ Chơi Trẻ Em</a></li>
+                                    </ul>
+                                </a></li>
+                                <li><a href="#">Dịch Vụ Khu Vui Chơi
+                                    <div class="arrow-down">
+                                        <img src="./assets/gifs/down.png" alt="arrow-down">
+                                    </div>
+                                    <ul class="list-1 list-main">
+                                        <li><a href="#">36 Xuân Thủy</a></li>
+                                        <li><a href="#">424 Nguyễn Trãi</a></li>
+                                        <li><a href="#">828 Đường Láng</a></li>
+                                        <li><a href="#">697 Giải Phóng</a></li>
+                                    </ul>
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="">Khuyến mại nối bật
+                            <div class="ti-arrow-down-1">
+                                <img src="./assets/gifs/down.png" alt="arrow-down">
+                            </div>
+                            </a>
+                            <ul class="nav-2-subnav-2">
+                                <li><a href="promotions1.html">Tặng voucher 50%</a></li>
+                                <li><a href="#">Lịch Tết</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="News.html" class="">Tin tức</a></li>
+                        <li><a href="contact.html" class="">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end - header -->
+        <!-- section-1 -->
+        <div id="section-1">
+            <div class="container margin-bottom-10">
+                <ul class="list-navigation">
+                    <li>
+                        <a itemprop="item" href="index.html" title="Trang chủ">
+                            <span itemprop="name">Trang chủ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <strong itemprop="name">Chính sách bảo mật</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end - section-1 -->
+
+        <!-- Begin - section-2 -->
+        <!-- end - section-2 -->
+        <div id="section-2" class="page margin-top-20 margin-bottom-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="page-title">
+                            <h1 class="title-head">
+                                <a href="#">Chính sách bảo mật</a>
+                            </h1>
+                        </div>
+                        <div class="content-page">
+                            <p class="p-strong" style="margin-top:0">
+                                <strong>Chính sách bảo vệ thông tin cá nhân người tiêu dùng</strong>
+                            </p>
+                            <p>LinhPhongbooks hiểu rõ tầm quan trọng và tôn trọng quyền bảo mật thông tin cá nhân của người truy cập website và sử dụng dịch vụ của LinhPhongbooks (người truy cập website và/hoặc mua sản phẩm, sử dụng dịch vụ của LinhPhongbooks sau đây gọi chung là “Khách hàng”); website, sản phẩm và dịch vụ sau đây gọi chung là “Dịch vụ”), bằng thiện chí của mình – LinhPhongbooks với Chính sách bảo mật thông tin này (“Chính sách”) sẽ cung cấp nội dung tổng quan nhằm minh bạch hóa các nguyên tắc thu thập, cách thức sử dụng, tiết lộ, lưu trữ Thông tin của Khách hàng mà LinhPhongbooks  thu thập được bằng những cách thức được nêu dưới đây:</p>
+                            <p class="p-strong">
+                                <strong>Mục đích thu thập thông tin cá nhân;</strong>
+                            </p>
+                            <p>LinhPhongbooks thu thập Thông tin của Khách hàng chủ yếu phục vụ cho mục đích hỗ trợ và duy trì mối liên hệ với Khách hàng như:</p>
+                            <ul>
+                                <li>Thông báo đến Khách hàng các Thông tin khuyến mại, quảng cáo hoặc cho các mục đích tiếp thị trực tiếp, xúc tiến thương mại khác.</li>
+                                <li>Duy trì liên lạc với Khách hàng, giải đáp các thắc mắc của Khách hàng liên quan đến Dịch vụ của LinhPhongbooks.</li>
+                                <li>Hỗ trợ khi Khách hàng sản phẩm và/hoặc sử dụng Dịch vụ của LinhPhongbooks.</li>
+                            </ul>
+                            <p>LinhPhongbooks thu thập Thông tin để phục vụ cho các mục đích kiểm soát, nâng cao chất lượng Dịch vụ như:</p>
+                            <ul>
+                                <li>Kiểm soát người truy cập, sử dụng Dịch vụ của LinhPhongbooks.</li>
+                                <li>Phân tích và tối ưu hóa các Dịch vụ của LinhPhongbooks.</li>
+                                <li>Nâng cao chất lượng Dịch vụ của LinhPhongbooks</li>
+                            </ul>
+                            <p class="p-strong">
+                                <strong>Phạm vi thu thập thông tin</strong>
+                            </p>
+                            <p>Thông tin của Khách hàng mà LinhPhongbooks sẽ thu thập bao gồm:</p>
+                            <ul>
+                                <li>Họ tên;</li>
+                                <li>Số điện thoại;</li>
+                                <li>Email;</li>
+                                <li>Địa chỉ thường trú;</li>
+                            </ul>
+                            <p>Cho từng Dịch vụ, mục đích thu thập cụ thể khác, tùy từng thời điểm LinhPhongbooks có thể yêu cầu Khách hàng cung cấp thêm một số Thông tin nhằm đảm bảo việc sử dụng Dịch vụ của chính Khách hàng hoặc đảm bảo sự liên hệ, giao dịch giữa LinhPhongbooks và Khách hàng được thông suốt, thuận tiện ví dụ như: vấn đề bảo hành, đổi trả và/hoặc các Thông tin cần thiết khác.</p>
+                            <p>Đối với phạm vi thu thập Thông tin đề cập tại Chính sách này, LinhPhongbooks sẽ luôn tạo điều kiện bằng cách thiết lập những tính năng trên giao diện Website để Khách hàng tùy chọn để quyết định việc cung cấp hoặc từ chối cung cấp Thông tin cho LinhPhongbooks.</p>
+                            <p></p>
+                            <p class="p-strong">
+                                <strong>Phạm vi sử dụng thông tin</strong>
+                            </p>
+                            <p>LinhPhongbooks sử dụng các Thông tin của Khách hàng thu thập được để:</p>
+                            <ul>
+                                <li>Thực hiện các biện pháp để hoàn thiện Dịch vụ của LinhPhongbooks</li>
+                                <li>Thiết lập các chương trình hỗ trợ khách hàng thân thiết hoặc các chương trình xúc tiến thương mại khác;</li>
+                                <li>Xử lý các vấn đề liên quan đến việc sử dụng Dịch vụ của Khách hàng hoặc giao dịch giữa LinhPhongbooks và Khách hàng;</li>
+                                <li>Gửi thư ngỏ, đơn đặt hàng, thư cảm ơn;</li>
+                                <li>Gửi các Thông tin khuyến mãi hoặc các Thông tin khác cho Khách hàng khi có sự đồng ý trước của Khách hàng.</li>
+                                <li>Thông báo về các thông tin tuyển dụng của LinhPhongbooks. Nếu Khách hàng đăng kí nhận email thông báo.</li>
+                                <li>Đánh giá và phân tích thị trường, khách hàng, Dịch vụ của LinhPhongbooks</li>
+                                <li>Các nội dung khác mà LinhPhongbooks được phép sử dụng Thông tin không trái với quy định của pháp luật.</li>
+                            </ul>
+                            <p class="p-strong">
+                                <strong>Cam kết bảo mật thông tin</strong>
+                            </p>
+                            <p>LinhPhongbooks cam kết bảo mật Thông tin của Khách hàng theo đúng các nội dung được quy định tại Chính sách này và quy định của pháp luật.</p>
+                            <p>LinhPhongbooks sẽ áp dụng phương án và giải pháp thích hợp về kỹ thuật và an ninh để bảo vệ hiệu quả nhất Thông tin của Khách hàng. Tuy nhiên, lưu ý rằng mặc dù LinhPhongbooks thực hiện các phương thức hợp lý để bảo vệ Thông tin của Khách hàng, nhưng không có trang web, đường truyền Internet, hệ thống máy vi tính hay kết nối không dây nào là an toàn tuyệt đối.</p>
+                            <p>Do vậy, LinhPhongbooks không thể đưa ra một cam kết chắc chắn rằng thông tin Khách hàng cung cấp cho LinhPhongbooks sẽ được bảo mật một cách tuyệt đối an toàn, và LinhPhongbooks không thể chịu trách nhiệm trong trường hợp có sự truy cập trái phép, rò rỉ Thông tin của Khách hàng mà không do lỗi của LinhPhongbooks.</p>
+                            <p>Nếu Khách hàng không đồng ý với các điều khoản như đã mô tả ở trên, LinhPhongbooks khuyến nghị Khách hàng không nên gửi Thông tin đến cho LinhPhongbooks.</p>
+                            <p class="p-strong">
+                                <strong>Đối tượng tiếp cận thông tin</strong>
+                            </p>
+                            <p>Để thực hiện mục đích thu thập Thông tin đề cập tại Chính sách này LinhPhongbooks có thể cần sự hỗ trợ từ bên thứ ba để phân tích dữ liệu, tiếp thị và hỗ trợ dịch vụ khách hàng và/hoặc cung cấp Dịch vụ tốt hơn cho Khách hàng. Trong quá trình hỗ trợ, Thông tin của Khách hàng có thể được LinhPhongbooks tiết lộ cho các đối tượng được đề cập dưới đây:</p>
+                            <ul>
+                                <li>Đơn vị trực thuộc của LinhPhongbooks khi sự tham gia của Đơn vị trực thuộc là cần thiết để thực hiện/hoàn thiện giao dịch đã thiết lập giữa LinhPhongbooks với Khách hàng.</li>
+                                <li>Đối tác kinh doanh mà LinhPhongbooks tin tưởng, việc tiết lộ và trách nhiệm bảo mật Thông tin của Khách hàng sẽ được thực hiện theo thỏa thuận giữa LinhPhongbooks và đối tác kinh doanh của LinhPhongbooks.</li>
+                                <li>Để phát triển hoạt động kinh doanh hoặc trong trường hợp bất khả kháng LinhPhongbooks có thể phải thực hiện tổ chức lại, chuyển nhượng, giải thể hoặc phá sản công ty, trường hợp này các đơn vị kế thừa, nhận chuyển nhượng của LinhPhongbooks có thể sẽ tiếp nhận Thông tin của Khách hàng để thay thế LinhPhongbooks tiếp tục cung cấp, thực hiện Dịch vụ với Khách hàng.</li>
+                                <li>LinhPhongbooks sẽ phải tiết lộ Thông tin của Khách hàng cho Bên thứ ba hoặc cho cơ quan có thẩm quyền khi được cơ quan có thẩm quyền yêu cầu hoặc các trường hợp khác theo quy định của pháp luật hoặc LinhPhongbooks có cơ sở để tin rằng việc tiết lộ Thông tin có thể bảo vệ quyền, tài sản hoặc an toàn của chính Khách hàng hoặc của LinhPhongbooks /Đơn vị trực thuộc của LinhPhongbooks.</li>
+                                <li>Các bên khác khi có sự đồng ý hoặc theo hướng dẫn của Khách hàng.</li>
+                            </ul>
+                            <p class="p-strong">
+                                <strong>Thời gian lưu trữ thông tin;</strong>
+                            </p>
+                            <p>LinhPhongbooks lưu giữ Thông tin về Khách hàng trong thời gian cần thiết cho mục đích mà Thông tin được thu thập hoặc theo yêu cầu hủy của Hợp đồng hoặc theo quy định của pháp luật hiện hành.</p>
+                            <p class="p-strong">
+                                <strong>THÔNG TIN, PHƯƠNG THỨC LIÊN HỆ</strong>
+                            </p>
+                            <p>LinhPhongbooks trân trọng mọi ý kiến đóng góp, liên hệ và phản hồi thông tin từ Khách hàng về Dịch vụ của LinhPhongbooks cũng như chính sách này. Mọi thắc mắc liên quan, Khách hàng vui lòng liên hệ theo thông tin dưới đây:</p>
+                            <p>
+                                Nhà Sách Linh Phong
+                                <br>
+                                
+                                Trụ sở : 828 Đường Láng – Đống Đa – Hà Nội
+                                <br>
+
+                                Hotline : 094.1234.333
+                                <br>
+
+                                Cơ sở 1: 36 Xuân Thủy – Cầu Giấy – Hà Nội
+                                <br>
+
+                                Hotline: 093.111.2222
+                                <br>
+
+                                Cơ sở 2 : 424 Nguyễn Trãi – Thanh Xuân – Hà Nội
+                                <br>
+
+                                Hotline: 0123 .654. 433
+                            </p>
+                            <p> Phương thức và công cụ để người tiêu dùng tiếp cận và chỉnh sửa dữ liệu;</p>
+                            <p>
+                                <strong>Liên hệ trực tiếp với </strong>
+                                Nhà Sách Linh Phong
+                                <strong>.</strong>
+                            </p>
+                            <p class="p-strong">
+                                <strong>1.f) Cơ chế tiếp nhận và giải quyết khiếu nại của người tiêu dùng (liên quan đến việc thông tin cá nhân bị sử dụng sai mục đích hoặc phạm vi đã thông báo).</strong>
+                            </p>
+                            <p>B1: Liên hệ với Nhà Sách Linh Phong</p>
+                            <p>B2: Nhận thông tin phản hồi trong vòng 5 ngày làm việc</p>
+                        </div>
+                    </div>
+                    <script src="./assets/js/scroll-out.js"></script>
+                    <script type="text/javascript">
+                        ScrollOut({
+                            targets: 'a, strong, p'
+                        })
+                    </script>
+                </div>
+            </div>
+        </div>
+        <!-- Begin-Footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="subscribe-area">
+                    <div class="row-1 align-item-center">
+                        <div class="col-1">
+                            <div class="subscribe-content">
+                                <h2>Đăng ký nhận tin</h2>
+                                <p>Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.</p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="subscribe-form">
+                                <form id="mc-form" class="newsletter-form">
+                                    <div class="input-group">
+                                        <input aria-label="Địa chỉ Email" type="email" class="form-control" placeholder="Địa chỉ Email" name="EMAIL" required autocomplete="off">
+                                        <span class="input-group-append">
+                                            <button class="btn-default" type="submit" aria-label="Đăng ký nhận tin" name="subscribe">Đăng ký</button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <div class="single-footer-widget">
+                            <div class="logo">
+                                <a href="#" title="Linh - Phong Books">
+                                    <img src="./assets/imgs/logo1.png" alt="">
+                                </a>
+                                <p>
+                                    LINGPHONGBOOK
+                                    <br>
+                                    <b>Hộ Kinh Doanh nhà sách Linh Phong</b>
+                                    <br>
+                                    GPKD số 01G8019354 do UBND Quận Cầu Giấy Cấp ngày 04/12/2019
+                                </p>
+                                <ul class="footer-quick-links">
+                                    <li>
+                                        <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Chính sách vận chuyển">Chính sách vận chuyển</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                                    </li>
+                                    <li>
+                                        <a href="frompayment.html" title="Hình thức thanh toán">Hình thức thanh toán</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="social">
+                                <li>
+                                    <a href="#" title="Facebook" aria-label="Facebook">
+                                        <i class="ti-facebook"></i>
+                                        <img src="./assets/gifs/iconsfacebook.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Twitter" aria-label="Twitter">
+                                        <i class="ti-twitter-alt"></i>
+                                        <img src="./assets/gifs/43-twitter-512.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Youtube" aria-label="Youtube">
+                                        <i class="ti-youtube"></i>
+                                        <img src="./assets/gifs/youtube.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Instagram" aria-label="Instagram">
+                                        <i class="ti-instagram"></i>
+                                        <img src="./assets/gifs/instagram.png">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="single-footer-widget">
+                            <h3>Liên kết nhanh</h3>
+                            <ul class="footer-quick-links">
+                                <li>
+                                    <a href="#" title="Tủ Sách">Tủ Sách</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Sách Giáo Khoa">Sách Giáo Khoa</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Dụng Cụ Học Sinh">Dụng Cụ Học Sinh</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Văn Phòng Phẩm">Văn Phòng Phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Thế Giới Đồ Chơi">Thế Giới Đồ Chơi</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Dịch Vụ Khu Vui Chơi">Dịch Vụ Khu Vui Chơi</a>
+                                </li>
+                            </ul>
+                            <a href="#">
+                                <img class="img-footer" src="./assets/imgs/dathongbao.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="single-footer-widget">
+                            <h3>Thông tin liên hệ</h3>
+                            <div class="footer-contact-info">
+                                <li>
+                                    <span>Địa chỉ:</span>
+                                    CS1: 828 Đường Láng – Láng Thượng – Hà Nội - 094.1234.828
+                                </li>
+                                <li>
+                                    <span>Địa chỉ:</span>
+                                    CS2: 36 Xuân Thủy – Cầu Giấy – Hà Nội - 0934.173.636
+                                </li>
+                                <li>
+                                    <span>Địa chỉ:</span>
+                                    CS3: 424 Nguyễn Trãi - Thanh Xuân - Hà Nội - 0966.688.424
+                                </li>
+                                <li>
+                                    <span>Địa chỉ:</span>
+                                    CS4: 697 Giải Phóng - Hoàng Mai - Hà Nội - 0933.695.697
+                                </li>
+                                <li>
+                                    <span>Email:</span>
+                                    <a href="#">
+                                        linhphongbook@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <span>Điện thoại:</span>
+                                    <a href="#">012.1234.345</a>
+                                </li>
+                                <li>
+                                    <span>Zalo:</span>
+                                    <a href="#">0987.654.333</a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <div class="container">
+                    <div class="row-1">
+                        <div class="col-5 text-center">
+                            <span>
+                                © Bản quyền thuộc về
+                                <b>Nhà sách Linh Phong</b>
+                                <span class="thanhdoc">|</span>
+                                Cung cấp bởi
+                                <a href="#" title="Sapo">Sapo</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <a href='#' id="bttop" title="Lên đầu trang">
+                    <div class="back-to-top">
+                        <!-- <i class="btn-to-top ti-angle-double-up"></i> -->
+                        <div class="btn-to-top">
+                            <img src="./assets/gifs/preview.png">
+                        </div>
+                    </div>
+                </a>
+                <script type="text/javascript" src="assets/js/backtotop.js"></script>
+            </div>
+        </div>
+        <!-- End-Footer -->
+    </div>
+</body>
+</html>
